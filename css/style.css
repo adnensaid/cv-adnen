@@ -84,10 +84,10 @@ content
   display: flex;
   flex-flow: column; }
 
-.competences, .diplome, .experiences, .langues, .interet {
+.competences, .diplome, .experiences, .langues, .interet, .projetPerso {
   padding: 1rem 0; }
 
-.contentComp, .contentDiplome, .contentExperience, .contentLangues, .contentInteret {
+.contentComp, .contentDiplome, .contentExperience, .contentLangues, .contentInteret, .contentProjet {
   padding-top: 1rem; }
 
 .contentComp {
