@@ -84,7 +84,7 @@ content
   display: flex;
   flex-flow: column; }
 
-.competences, .diplome, .experiences, .langues, .interet, .projetPerso {
+.competences, .diplome, .experiences, .projetPerso, .langues, .interet, .projetPerso {
   padding: 1rem 0; }
 
 .contentComp, .contentDiplome, .contentExperience, .contentLangues, .contentInteret, .contentProjet {
