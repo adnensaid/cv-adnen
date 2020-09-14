@@ -18,7 +18,8 @@ ul {
   list-style: none; }
 
 .nom {
-  font-weight: 300; }
+  font-weight: 700;
+  color: red; }
 
 .underline {
   border-bottom: 1px solid #222; }
