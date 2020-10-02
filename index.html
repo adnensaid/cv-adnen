@@ -4,215 +4,210 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/varaibles.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>CV - Adnen</title>
 </head>
 <body>
-  <header>
-    <div class="Info">
-      <h2 class="nom">SAID Adnen</h2>
-      <p class="ville"> <i class="fas fa-map-marker-alt"></i> LYON</p>
-      <p class="age"><i class="fab fa-pagelines"></i> 37 ans</p>
-      <p class="tel"><i class="fas fa-phone"></i>0781152946</p>
-      <p class="email"><i class="fas fa-at"></i>adnensaid83@gmail.com</p>
-      <p class="site"><i class="fab fa-internet-explorer"></i> <a href="http://www.adnensaid.fr">www.adnensaid.fr</a></p>
-    </div>
-    <div class="photo">
-      <img src="./img/adnen.jpg" alt="">
-    </div>
-    <div class="certif">
-      <p class="underlinex2">Solutions Developer</p>
-      <p>Web Applications</p>
-    </div>
-  </header>
-  <div class="content">
-    <div class="titre">
-      <h1>Développeur Front-end</h1>
-    </div>
-    <div class="competences">
-      <h2 class="underlinex2">Compétences</h2>
-      <div class="contentComp">
-        <div class="lang">
-          <p><i class="fab fa-html5"></i>   HTML</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-          </div>
-          </div>
-          <div class="lang">
-          <p><i class="fab fa-css3-alt"></i> CSS</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          </div>
-          <div class="lang">
-          <p><i class="fab fa-js"></i> JS</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-    
-          </div>
-          <div class="lang">
-            <p><i class="fab fa-node-js"></i> Nodejs</p>
-            <div class="star">
-              <i class="fas fa-star dark"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+  <div class="container">
+    <header class="header">
+      <section class="photo">
+        <img src="./img/adnensaid.jpg" alt="">
+      </section>
+      <div class="job">
+        <h1>Said Adnen</h1>
+        <p>Developpeur Front-end</p>
+      </div>
+    </header>
+    <div class="body">
+      <aside>
+        <section class="contacts">
+          <h1 class="section-titre">Contacts</h1>
+          <div class="section-content">
+            <div>
+              <p class="label">Telephone</p>
+              <p>0781152946</p>
             </div>
-         </div> 
-         <div class="lang">
-          <p><i class="fab fa-git-alt"></i> Git</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <div>
+              <p class="label">Email</p>
+              <p>adnensaid83@gmal.com</p>
+            </div>
+            <div>
+              <p class="label">Adresse</p>
+              <p>2 avenue rosa parks 69009 LYON</p>
+            </div>
           </div>
-       </div> 
-      </div>
-    </div>
-    <div class="diplome">
-      <h2 class="underlinex2">Diplômes</h2>
-      <div class="contentDiplome">
-        <p class="date">Octobre 2012</p>
-        <div class="licence">
-          <h4 class="underline">Licence en Informatique</h4>
-          <p>École Polytechnique de l'Université de Gênes</p>
+        </section>
+        <section class="skills">
+          <h1 class="section-titre">SKILLS</h1>
+          <div class="section-content">
+            <div class="skill-value">
+              <label for="HTML" class="label"><i class="fab fa-html5"></i> HTML</label>
+              <progress max="100" value="80">80</progress>
+            </div>
+            <div class="skill-value">
+              <label for="CSS" class="label"><i class="fab fa-css3-alt"></i> CSS</label>
+              <progress max="100" value="80">80</progress>
+            </div>
+            <div class="skill-value">
+              <label for="JS" class="label"><i class="fab fa-js"></i>JS</label>
+              <progress max="100" value="50">50</progress>
+            </div>
+            <div class="skill-value">
+              <label for="Nodejs" class="label"><i class="fab fa-node-js"></i> NodeJS</label>
+              <progress max="100" value="40">40</progress>
+            </div>
+            <div class="skill-value">
+              <label for="git" class="label"><i class="fab fa-git-alt"></i> Git</label>
+              <progress max="100" value="40">20</progress>
+            </div>
+          </div>
+        </section>
+        <section class="langues">
+          <h1 class="section-titre">Langues</h1>
+          <div class="section-content">
+            <div class="star">
+              <p>Francais</p>
+              <i class="fas fa-star dark"></i>
+              <i class="fas fa-star dark"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="star">
+              <p>Italien</p>
+              <i class="fas fa-star dark"></i>
+              <i class="fas fa-star dark"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="star">
+              <p>Anglais</p>
+              <i class="fas fa-star dark"></i>
+              <i class="fas fa-star dark"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </section>
+        <section class="social-media">
+          <h1 class="section-titre">Social media</h1>
+          <div class="section-content">
+          <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+          <div><i class="fab fa-twitter-square"></i></div>
+          <div><i class="fab fa-facebook-square"></i></div>
+          </div>
+        </section>
+      </aside>
+      <div class="main">
+        <div class="diplome">
+          <h1 class="diplome-titre">Diplômes</h1>
+          <div class="content-diplome">
+            <div class="date">Oct <br>  2012</div>
+            <div class="licence underline-left">
+              <p class="titre box-backgroud">Licence en Informatique</p>
+              <p class="adresse">École Polytechnique de l'Université de Gênes</p>
+            </div>
+          </div>
+          <div class="content-diplome">
+            <div class="date">2004</div>
+            <div class="licence underline-left">
+              <p class="titre box-backgroud">Baccalauréat section Mathematique</p>
+              <p class="adresse">Lycée de garçons Sousse</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="experiences">
-      <h2 class="underlinex2">Expériences professionnelles</h2>
-      <div class="contentExperience">
-        <p class="date">De 2014 à 2015</p>
-        <div>
-          <h4 class="underline">Technicien en fibre optique chez Solutions 30 prestataire BOUYGUES TELECOM</h4>
-          <p>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines ou rurales</p>
-        </div>
-      </div>
-      <div class="contentExperience">
-        <p class="date">De 2015 a 2018</p>
-        <div>
-          <h4 class="underline">Technicien en fibre optique chez PROELEC prestataire de SFR</h4>
-          <p>
-            <ul>
-              <li>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines ou rurales</li>
-              <li>
+        <div class="experiences">
+          <h1 class="titre">Expériences professionnelles</h2>
+          <div class="content-diplome">
+            <div class="date">2014 <br>à<br>2015</div>
+            <div class="licence underline-left">
+              <p class="titre">Technicien en fibre optique </p>
+              <p class="adresse">chez Solutions 30 prestataire BOUYGUES TELECOM</p>
+              <p>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines ou rurales</p>
+            </div>
+          </div>
+          <div class="content-diplome">
+            <div class="date">2015 <br> à <br> 2018</div>
+            <div class="licence underline-left">
+              <p class="titre">Technicien en fibre optique </p>
+              <p class="adresse">PROELEC prestataire de SFR</p>
+              <div>
+                <ul>
+                  <li>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines
+                    ou rurales</li>
+                  <li>
                 Gestion des planifications faite par SFR pour des nouvelles suscription et prospection
-              </li>
-              <li>
-                Gestion des contrats existant SAV 
-              </li>
-              <li>
-                Coordination avec le service technique pour la gestion des échecs dû a des problèmes d’infrastructure 
-              </li>
-            </ul>
-          </p>
-        </div>
-      </div>
-      
-      <div class="contentExperience">
-        <p class="date">De 2018 a 2020</p>
-        <div>
-          <h4 class="underline">Responsable technique chez SCELEC prestataire de SFR</h4>
-          <ul>
-            <li>
-              Gestion de Control des techniciens  
-            </li>
-            <li>
-              Gestion des planifications des techniciens 
-            </li>
-            <li>
-              Gestions des réclamations 
-            </li>
-            <li>
-              Repérage des pannes réseau sur l’infra sfr
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="projetPerso">
-      <h2 class="underlinex2">Projets dans le cadre de la création de mon activité</h2>
-      <div class="contentProjet">
-        <h4 class="underline">Création d’une todo list (une liste de tâches)</h4>
-        <p>Le visiteur pourra simplement ajouter, modifier et supprimer des tâches.</p>
-        <p><strong>Technologies: </strong>JS, HTML, CSS</p>
-      </div>
-      <div class="contentProjet">
-        <h4 class="underline">Création de l'application Losange version 1.0</h4>
-        <p>J'ai eu l'idée dans le cadre de mon ancien emploie de créer une application pour la gestion individuel
-          de toutes les interventions faites au cours de la journée, avoir une vision mensuel, nombre de succees, echecs et 
-          connaitre ma prime de rendement.
-          <a href="https://github.com/adnensaid/Losange">lien</a>
-        </p>
-        <p><strong>Technologies: </strong>JS, HTML, CSS</p>
-      </div>
-    </div>
-    <div class="langues">
-      <h2 class="underlinex2">Langues</h2>
-      <div class="contentLangues">
-        <div class="lang">
-          <p>Arabe</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
+                  </li>
+                  <li>
+                    Gestion des contrats existant SAV 
+
+                  </li>
+                  <li>
+                    Coordination avec le service technique
+                    pour la gestion des échecs dû a des problèmes d’infrastructure 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content-diplome">
+            <div class="date">2018 <br> à <br> 2020</div>
+            <div class="licence underline-left">
+              <p class="titre" class="underline">Responsable technique </p>
+              <p class="adresse">chez SCELEC prestataire de SFR</p>
+              <div>
+                <ul>
+                <li>
+                  Gestion de Control des techniciens  
+                </li>
+                <li>
+                  Gestion des planifications des techniciens 
+                </li>
+                <li>
+                  Gestions des réclamations 
+                </li>
+                <li>
+                  Repérage des pannes réseau sur l’infra sfr
+                </li>
+              </ul>
+            </div>
+            </div>
           </div>
         </div>
-        <div class="lang">
-          <p>Francais</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star"></i>
-          </div>
+
+        <div class="projet-perso">
+          <h1 class="titre">Projets dans le cadre de la création de mon activité</h1>
+          <div class="content-diplome">
+            <div class="date">En <br> cours ...</div>
+            <div class="licence underline-left">
+              <div class="titre">Création d’une todo list (une liste de tâches)</div>
+                <p>Le visiteur pourra simplement ajouter, modifier et supprimer des tâches.</p>
+                <p><strong>Technologies: </strong>JS, HTML, CSS</p>
+              </div>
+            </div>
+            <div class="content-diplome">
+              <div class="date">En <br> cours ... </div>
+              <div class="licence underline-left">
+                <div class="titre">Création de l'application Losange version 1.0</div>
+                <p>J'ai eu l'idée dans le cadre de mon ancien emploie de créer une application pour la gestion individuel
+                  de toutes les interventions faites au cours de la journée, avoir une vision mensuel, nombre de succees, echecs et 
+                  connaitre ma prime de rendement.
+                  <a href="https://github.com/adnensaid/Losange">lien</a>
+                </p>
+                <p><strong>Technologies: </strong>JS, HTML, CSS</p>
+              </div>
+            </div>
         </div>
-        <div class="lang">
-          <p>Italien</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-        <div class="lang">
-          <p>Anglais</p>
-          <div class="star">
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star dark"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
-      </ul>
-    </div>
-    <div class="interet">
-      <h2 class="underlinex2">
-        Centres d’intérêt
-      </h2>
-      <ul class="contentInteret">
-        <li>Foot</li>
-        <li>musique</li>
-        <li>jeux video</li>
-        <li>Inventions et technologies</li>
-        <li>Cinéma</li>
-      </ul>
-    </div>
+
+
+      </div>
+    </div>    
   </div>
+  
 </body>
 </html>
