@@ -1,0 +1,14 @@
+.header .job{
+  display: none;
+}
+.vp .main{
+  display: none;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.vp{
+  display: flex;
+  flex-direction: column;
+}

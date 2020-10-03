@@ -42,13 +42,16 @@ img {
   min-height: 100vh;
   margin-left: 1rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch; }
 
 .header {
   flex: 0 0 auto;
   display: flex;
   flex-flow: row nowrap;
-  align-items: stretch; }
+  align-items: stretch;
+  justify-content: stretch; }
   .header .picture {
     padding: 2rem 0;
     background: var(--sidebar);
@@ -66,7 +69,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: stretch;
     background: var(--primary); }
     .header .job h1 {
       color: white;
