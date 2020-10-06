@@ -1,13 +1,11 @@
-.header .job {
-  display: none; }
-
-.vp .main {
-  display: none; }
-
 .header {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column-reverse; }
 
 .vp {
   display: flex;
   flex-direction: column; }
+  .vp .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
