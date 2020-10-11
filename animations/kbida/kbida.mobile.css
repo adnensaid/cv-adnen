@@ -1,0 +1,62 @@
+.list-elements{
+  padding: 0.5rem;
+}
+.element{
+  background: white;
+  box-shadow: none;
+}
+.picture{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid #e1b12c;
+  margin: 1rem;
+}
+.name h1{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0rem;
+  font-size: 1rem;
+}
+
+@keyframes icon-plus-v{
+  from{
+    opacity:0;
+  }to{
+    opacity: 1;
+    transform: translateY(-65px) rotate(90deg);
+    width: 50px;
+    background: black;
+  }
+} 
+@keyframes icon-plus-h{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+    background: black;
+    transform: translateY(80px);
+    width: 50px;
+  }
+}
+
+
+@keyframes egale-top-animate{
+  from{
+    opacity: 0;
+
+  }to{
+    opacity: 1;
+    width: 100px;
+    transform: translateY(50px);
+  }
+}
+@keyframes egale-bottom-animate{
+  from{
+    opacity:0;
+  }to{
+    opacity: 1;
+    width: 100px;
+    transform: translateY(-50px);
+  }
+}

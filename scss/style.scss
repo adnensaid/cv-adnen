@@ -38,7 +38,6 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
-    background: var(--primary);
     h1{
       color: white;
       font-size: 3em;
@@ -80,10 +79,15 @@ img{
       background: #eee;
       cursor: pointer;
     }
-    .skill-value{
+    .skill-list{
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-between;
+      min-height: 200px;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+    .skill-value{
+      margin: 0 1rem;
     }
     .section-titre{
       font-weight: 700;
@@ -120,13 +124,13 @@ img{
     .creations{
       border-left: 0.1px solid var(--sidebar);
       flex: auto;
-      font-family: var(--font-family-secondary);
+      font-size:1.3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       h1{
-        background: var(--sidebar);
         padding: 1rem;
+
       }
       .nom-creation{
         margin: 1rem 0;
@@ -136,9 +140,7 @@ img{
         text-align: center;
         min-width: 80px;
         min-height: 80px;
-        border: 1px solid #eee;
         border-radius: 50%;
-        background: var(--sidebar);
       }
       p{
         font-weight: 400;

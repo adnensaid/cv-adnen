@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+box-shadow
+*/
+.shadow{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+}
+/* container*/
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.list-elements{
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.element{
+  background: #eee;
+  margin: 0 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name h1{
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5rem;
+}
+.picture{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 2px solid #e1b12c;
+}
+.pict-1{
+  background: url(./images/adnen.jpg) center center / cover; 
+}
+.pict-2{
+  background: url(./images/houda.jpg) center center / cover;
+}
+
+/* + animation */
+
+.plus{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.plus .icon-plus-h{
+  width: 2px;
+  height: 2px;
+  opacity: 1;
+  text-align: center;
+  animation: icon-plus-h 1s ease-in-out 1s alternate forwards;
+}
+.plus .icon-plus-v{
+  width: 2px;
+  height: 2px;
+  opacity: 1;
+  text-align: center;
+  animation: icon-plus-v 1s ease-in-out 1s alternate forwards;
+
+}
+@keyframes icon-plus-v{
+  from{
+    opacity:0;
+  }to{
+    opacity: 1;
+    transform: translateY(-150px) rotate(90deg);
+    width: 100px;
+    background: black;
+  }
+} 
+@keyframes icon-plus-h{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+    background: black;
+    transform: translateY(120px);
+    width: 100px;
+  }
+}
+.egale{
+  padding: 2rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.egale-top-animate, .egale-bottom-animate{
+  width: 2px;
+  height: 2px;
+  background: green;
+}
+.egale-top-animate{
+  opacity: 0;
+  animation: egale-top-animate 1s ease-in-out 2s alternate forwards;
+}
+.egale-bottom-animate{
+  opacity: 0;
+  animation: egale-bottom-animate 1s ease-in-out 2s alternate forwards;
+}
+@keyframes egale-top-animate{
+  from{
+    opacity: 0;
+
+  }to{
+    opacity: 1;
+    width: 100px;
+    transform: translateY(30px);
+  }
+}
+@keyframes egale-bottom-animate{
+  from{
+    opacity:0;
+  }to{
+    opacity: 1;
+    width: 100px;
+    transform: translateY(-30px);
+  }
+}
+
+/* Resultat */
+.resultat{  
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.resultat-img{
+  width: 400px;
+  flex-basis: 200px;
+  text-align: center;
+  background:url(./images/love.jpg) center center / cover;
+  animation: img-animate 1s ease-in-out 3s alternate forwards;
+  filter: blur(15px);
+  opacity: 0;
+}
+
+@keyframes img-animate{
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(-50px);
+  }
+}
