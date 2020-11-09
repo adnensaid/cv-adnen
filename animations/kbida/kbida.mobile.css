@@ -11,6 +11,16 @@
   border-radius: 30px;
   border: 2px solid #e1b12c;
   margin: 1rem;
+  animation: picture 1s ease-in forwards;
+  opacity: 0;
+}
+@keyframes picture{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 .name h1{
   margin: 0;
@@ -24,7 +34,7 @@
     opacity:0;
   }to{
     opacity: 1;
-    transform: translateY(-65px) rotate(90deg);
+    transform: translateY(-80px) rotate(90deg);
     width: 50px;
     background: black;
   }
@@ -35,7 +45,7 @@
   }to{
     opacity: 1;
     background: black;
-    transform: translateY(80px);
+    transform: translateY(70px);
     width: 50px;
   }
 }
