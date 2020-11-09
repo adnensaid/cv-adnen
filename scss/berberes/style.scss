@@ -1,0 +1,503 @@
+@import "reset";
+@import "base";
+@import "classes";
+@import "animations";
+
+body{
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background: var(--background);
+}
+.container-header{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(../../img/berberes/trio/bkg-1.png) center center/cover;
+}
+.header{
+  padding: 2rem 8rem 0 8rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 20px 50px 50px;
+  grid-auto-rows: auto;
+  justify-items: center;
+  grid-template-areas: "skincare . social"
+  ". logo ."
+  ". logo .";
+  :first-child{
+    grid-area: skincare;
+    padding-right: 1rem;
+  }
+  .logo{
+    grid-area: logo;
+    padding: 0 16rem;
+  }
+  ul{
+    grid-area: social;
+    display: flex;
+    flex-flow: row nowrap;
+    li{
+      padding: 0 2rem 0 0;
+    }
+  }
+}
+/* article - trio*/
+.trio{
+  padding: 2rem 14rem 0 14rem;
+
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trio-content{
+  //max-width: 90%;
+  flex: auto;
+  color: var(--gray);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "img titre "
+  "img h1"
+  "img h3"
+  "img paragraphe"
+  "img btn"
+  "img . "
+;
+  img{
+    grid-area: img;
+    max-width: 100%;
+    padding-top: 6rem;
+    
+  }
+  .titre-article{
+    grid-area: titre;
+    color: var(--gray);
+    letter-spacing: 0.6rem;
+    font-size: 1.4rem;
+    margin: 0;
+    
+  }
+  h1{
+    grid-area: h1;
+    font-weight: 300;
+    color:var(--text);
+    font-size: 6.4rem;
+    padding: 2rem 0;
+    
+  }
+  h3{
+
+    grid-area: h3;
+    
+    p{
+      font-size: 0.5em;
+      margin: 0;
+    }
+  }
+  .paragraphe{
+    grid-area: paragraphe;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding:0;
+    margin: 0;
+    padding-bottom: 2rem;
+    padding-right: 14rem;
+  }
+  .button-article{
+    grid-area: btn;
+    max-width: 250px;
+    text-align: center;
+    align-self: center;
+
+    color: var(--orange);
+    background: #fff;
+    
+  }
+}
+
+
+/* vp */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  .vp-list{
+    flex: auto;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    /* section content */
+    .vp-elem{
+      position: relative;
+      padding-top: 20rem; 
+      display: flex;
+      .vp-num{
+        flex: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        //background: pink;
+        p{
+          color: white;
+          font-size: 30em; // max-height / line-height
+          //background: black;
+        }
+      }
+      .vp-content{
+        flex: 1;
+        max-height: 60rem;// nbre de ligne * line-height
+        overflow: hidden;
+        //background: yellow;
+        nav{
+          padding-top: 2rem;
+        }
+        nav ul{
+          display: flex;
+          li{
+            margin-right:1rem;
+            font-size: 1.4rem;
+          }
+          li a{
+            padding: 1rem 0.5rem;
+            background:linear-gradient(to top, var(--pink) 50%, var(--background) 50%);
+          }
+        }
+        p{
+          padding-top: 1rem;
+          max-width: 450px;
+          font-size: 1.8rem;
+          font-weight: 300;
+        }
+      }
+    }
+    .elem-1 .vp-num::after{
+      content: "";
+      background: center left / contain url(../../img/berberes/trio/img-1.png) no-repeat;
+      //border: 1px solid black;
+  
+    }
+    .elem-2 .vp-num::after{
+      content: "";
+      //border: 1px solid black;
+      background: center right / contain url(../../img/berberes/trio/img-3.png) no-repeat;
+    }
+    .elem-3 .vp-num::after{
+      content: "";
+      background: center bottom / contain url(../../img/berberes/trio/img-4.png) no-repeat;
+  
+      //border: 1px solid black;
+    
+    }
+    
+  }
+  
+  
+  /* section - offre */
+  
+  .offre-section{
+    flex: auto;
+    padding: 4rem 8rem;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    .offre-header{
+      position: relative;
+      flex-basis: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      img{
+        position: absolute;
+        top: -10rem;
+        max-width: 15rem;
+      }
+    }
+    .commander{
+      flex: auto;
+      display: flex;
+      img{
+        flex: 1;
+      }
+      .commander-content{
+        flex: 1;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        hr{
+          margin: 2rem 0;
+          max-width: 80px;
+          border: 0;
+          border: 1px solid var(--text);
+        }
+        ul li{
+          display: flex;
+          margin-bottom: 4rem;
+          .circle-s{
+            margin: 0 2rem 0 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 2rem;
+          }
+          div{
+            h4{
+              margin: 0;
+            }
+            p{
+              margin: 0;
+            }
+          }
+        }
+        .btn{
+          color: white;
+          background: var(--orange);
+        }
+      }
+  
+    }
+    
+  }
+  /* secrets */
+  .secrets{
+    flex: auto;
+    line-height: 2.8rem;
+    padding: 8rem 8rem;
+    background: center center / cover url(../../img/berberes/trio/secrets-bkg.jpg) no-repeat;
+    color: white;
+    h2{
+      color: white;
+    }
+    p{
+      max-width: 50rem;
+      font-weight: 300;
+     
+    }
+  }
+  
+  /* services */
+  .services{
+    padding: 4rem 8rem;
+    background: var(--background);
+    h4{
+      text-align: center;
+    }
+    .service-content{
+      
+      padding: 4rem 0;
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+    }
+    .elem{
+      flex: 1;
+      background:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 6rem;
+      margin: 1rem;
+      img{
+        max-width: 50%;
+        max-height: 50%;
+        padding-bottom: 1rem;
+      }
+      p{
+        span{
+          color: var(--orange);
+        }
+      }
+    }
+  }
+/* newsletter */
+.newsletter{
+  background: white;
+  padding: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4{
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem;
+  }
+  form{
+    display: flex;
+    input{
+      width: 300px;
+      border: 1px solid var(--background);
+      background: #eee;
+    }
+  }
+  p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 1100px;
+  }
+  .social{
+    display: flex;
+    align-items: center;
+    p{
+      //background: green;
+      flex: auto;
+      font-size:1.8rem;
+      font-weight:400;
+    }
+    .social-content{
+      flex:auto;
+      display: flex;
+      align-items: center;
+      .fcb{
+        flex: auto;
+        margin: 1rem;
+        padding: 0.5rem 1.3rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        border: 1px solid black;
+      }
+      .instagram{
+        flex: auto; 
+      }
+    }
+    .social-content::after{
+      content: "";
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--text);
+      border-radius: 40px;
+      background: center center url(../../img/berberes/trio/instagram.png) no-repeat;
+      background-size: 20px 20px
+    }
+  }
+}
+/* footer */
+footer{
+  padding: 4rem 8rem;
+  background: center center / cover url(../../img/berberes/trio/footer-bkg.jpg) no-repeat ;
+  color: white;
+  .footer-content{
+    display: flex;
+    //background: green;
+    .logo-footer{
+      flex-basis: 60px;
+      display: flex;
+      align-items: center;
+      //background: red;
+    }
+    .inside-footer{
+      flex: auto;
+      //background: pink;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+/*       div{
+        display: flex;
+      } /* /* */
+    div{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      grid-template-areas:
+      "ul-1 ul-2 ul-3 ul-4";
+      gap: 4rem;
+      div ul:nth-child(1){
+        grid-area: ul-1;
+      }
+      div ul:nth-child(2){
+        grid-area: ul-2;
+      }
+      div ul:nth-child(3){
+        grid-area: ul-3;
+      }
+      div ul:nth-child(4){
+        grid-area: ul-4;
+      }
+    } 
+    .footer-titre{
+      font-weight: 700;
+      padding-bottom: 2rem;   
+    }
+    ul li{
+      padding:0.2rem 0;
+      font-size: 1.4rem;
+    }
+    }
+  }
+}
+.under-footer{
+  background: var(--noir);
+  color: white;
+  position: relative;
+  .content-under-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease 1s;
+    .contact{
+      position: relative;
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .cookies{
+        //opacity: 0;
+        width: 160px;
+        height: 5px;
+        background: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        position: absolute;
+        bottom: -5px;
+        transition: all 1s;
+
+        a{
+          padding: 0;
+          font-size: 1.5rem;
+          display: none;
+          //background: white;
+          color: orange;
+          text-decoration: underline;
+        } 
+        &:hover{
+          transition: all 0.5s;
+          height: 40px;
+          a{
+            display: block;
+            text-align: center;
+            padding: 10px 0;
+          }
+        }
+      } 
+    }
+    &:hover{
+      .cookies{
+        transition: all 1s;
+      }
+    }
+    .list ul{
+      display: flex;
+      li{
+        padding: 2rem;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+      }
+    }  
+  }
+  
+  
+}
+
+}
