@@ -7,8 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="css/varaibles.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/style.css">
-  
   <link rel="stylesheet" media="only screen and (max-width: 500px)"  href="css/style.mobile.css">
   <title>CV-Adnen</title>
 </head>
@@ -23,27 +23,20 @@
         <h4>Developpeur front-end</h4>
       </div>
     </header>
-    <section class="vp">
+    <div class="vp gradien-vp">
+      <!-- sidebar -->
       <div class="sidebar">
-        <div class="contacts">
-          <h1 class="section-titre">Contacts</h1>
-          <div class="section-content">
-            <div>
-              <p class="label">Telephone</p>
-              <p>0781152946</p>
-            </div>
-            <div>
-              <p class="label">Email</p>
-              <p>adnensaid83@gmal.com</p>
-            </div>
-            <div>
-              <p class="label">Adresse</p>
-              <p>2 avenue rosa parks 69009 LYON</p>
-            </div>
-          </div>
+        <div class="block">
+          <h2 class="section-titre">Contacts</h2>
+          <h3 class="label">Téléphone</h3>
+          <p class="hint">07 81 15 29 46</p>
+          <h3 class="label">Email</h3>
+          <p class="hint">adnensaid83@gmal.com</p>
+          <h3 class="label">Adresse</h3>
+          <p class="hint">2 avenue rosa parks 69009 LYON</p>
         </div>
-        <div class="skills">
-          <h1 class="section-titre">SKILLS</h1>
+        <div class="block">
+          <h2 class="section-titre">SKILLS</h-2>
           <div class="skill-list">
             <div class="skill-value">
               <div class="progresse progresse-html"></div>
@@ -67,168 +60,309 @@
             </div>
           </div>
         </div>
-        <div class="langues">
-          <h1 class="section-titre">Langues</h1>
-          <div class="section-content">
-            <div class="star">
-              <p>Francais</p>
-              <i class="fas fa-star dark"></i>
-              <i class="fas fa-star dark"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+
+        <div class="block">
+          <h2 class="section-titre">Langues</h2>
+          <h3>Francais</h3>
+          <div class="bar">
+            <div class="bar-progress"></div>
+            <div class="bar-dot francais">
+              <div class="dot"></div>
             </div>
           </div>
-          <div class="section-content">
-            <div class="star">
-              <p>Italien</p>
-              <i class="fas fa-star dark"></i>
-              <i class="fas fa-star dark"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+
+          <h3>Italien</h3>
+          <div class="bar">
+            <div class="bar-progress"></div>
+            <div class="bar-dot italien">
+              <div class="dot"></div>
             </div>
           </div>
-          <div class="section-content">
-            <div class="star">
-              <p>Anglais</p>
-              <i class="fas fa-star dark"></i>
-              <i class="fas fa-star dark"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+          
+          <h3>Arabe</h3>
+          <div class="bar">
+            <div class="bar-progress"></div>
+            <div class="bar-dot arabe">
+              <div class="dot"></div>
             </div>
           </div>
+
         </div>
-        <div class="social-media">
-          <h1 class="section-titre">Social media</h1>
-          <div class="section-content">
-            <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-            <div><i class="fab fa-twitter-square"></i></div>
-            <div><i class="fab fa-facebook-square"></i></div>
-          </div>
+
+        <div class="block">
+          <h2 class="section-titre">Social media</h2>
+          <ul class="medias">
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          </ul>   
         </div>
       </div>
-
+      <!-- main -->
       <div class="main">
-        <div class="global-content-main">
-          <div class="diplome">
-            <h1 class="titre">Diplômes</h1>
-            <div class="content-main">
-              <div class="date shadow gradien-10">Oct 2012</div>
-              <div class="fonction">
-                <p class="main-titre box-background shadow gradien-10">Licence en Informatique</p>
-                <p class="adresse">École Polytechnique de l'Université de Gênes</p>
-              </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#diplome">diplômes</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#projets">Projets</a></li>
+          </ul>
+        </nav>
+        <div class="container-cv">
+          <div class="titre-section">
+            <img class="img circle" src="./img/diplomes.jpeg" alt="">
+            <h4>Diplomes</h4>
+          </div>           
+          <div class="diplomes" id="diplome">          
+            <div class="diplome">
+              <p class="underline-v"></p>
+              <div class="date">Oct <br>  2012</div>
+              <div class="content-diplome shadow gradien-10">
+                <p>Licence en Informatique</p>
+                <p class="hint">École d'ingegnieur Université de Gênes</p>
+              </div>    
             </div>
-            <div class="content-main">
-              
-              <div class="date shadow gradien-10">2004</div>
-              <div class="fonction">
-                <p class="main-titre box-background shadow gradien-10">Baccalauréat section Mathematique</p>
-                <p class="adresse">Lycée de garçons Sousse</p>
-              </div>
+            <div class="smart">
+              <div class="smart-circle"></div>
             </div>
-          </div>
-          <div class="experiences">
-            <h1 class="titre">Expériences professionnelles</h2>
-            <div class="content-main">
-              <div class="date shadow gradien-10">2014 <br>à<br>2015</div>
-              <div class="fonction">
-                <p class="main-titre shadow">Technicien en fibre optique </p>
-                <p class="adresse">chez Solutions 30 prestataire BOUYGUES TELECOM</p>
-                <p>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines ou rurales</p>
-              </div>
+            <div class="diplome">
+              <p class="underline-v"></p>
+              <div class="date">2004</div>
+              <div class="content-diplome shadow gradien-10">
+                  <p>Baccalauréat section mathématique</p>
+                  <p class="hint">Lycée de garcons sousse</p>
+              </div>    
+            </div>    
+        </div>
+            <!-- section experiences -->
+            <div class="titre-section">
+              <img class="img circle" src="./img/exper.png" alt="">
+              <h4>Expériences professionnelles</h4>
             </div>
-            <div class="content-main">
-              <div class="date shadow gradien-10">2015 <br> à <br> 2018</div>
-              <div class="fonction">
-                <p class="main-titre shadow">Technicien en fibre optique </p>
-                <p class="adresse">PROELEC prestataire de SFR</p>
+            <div class="experiences" id="experiences">
+              <div class="experience">
+                <p class="underline-v"></p>
+                <div class="date">2014 <br>à<br>2015</div>
+                <div class="content-diplome shadow">
+                  <p class="underline">Technicien en fibre optique </p>
+                  <p class="hint">chez Solutions 30 prestataire BOUYGUES TELECOM</p>
+                  <p>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines ou rurales</p>
+                </div>             
+              </div>
+              <div class="smart">
+                <div class="smart-circle"></div>
+              </div>
+              <div class="experience">
+                <p class="underline-v"></p>
+                <div class="date">2015 <br> à <br> 2018</div>
+                <div class="content-diplome shadow">
+                  <p class="underline">Technicien en fibre optique </p>
+                  <p class="hint">PROELEC prestataire de SFR</p>
+                  <div>
+                    <ul>
+                      <li>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines
+                        ou rurales</li>
+                      <li>
+                    Gestion des planifications faite par SFR pour des nouvelles suscription et prospection
+                      </li>
+                      <li>Gestion des contrats existant SAV</li>
+                      <li>Coordination avec le service technique pour la gestion des échecs dû a des problèmes d’infrastructure 
+                      </li>
+                    </ul>
+                  </div>  
+                  <p>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines ou rurales</p>
+                </div>                   
+            </div>
+            <div class="smart">
+              <div class="smart-circle"></div>
+            </div>
+            <div class="experience">
+              <p class="underline-v"></p>
+              <div class="date">2018 <br> à <br> 2020</div>
+              <div class="content-diplome shadow">
+                <p class="underline">Responsable technique </p>
+                <p class="hint">chez SCELEC prestataire de SFR</p>
                 <div>
                   <ul>
-                    <li>Mission apporter le très haut débit jusqu’a chaque logement, bureau, des zones urbaines
-                      ou rurales</li>
                     <li>
-                  Gestion des planifications faite par SFR pour des nouvelles suscription et prospection
+                      Gestion de Control des techniciens  
                     </li>
                     <li>
-                      Gestion des contrats existant SAV 
-  
+                      Gestion des planifications des techniciens 
                     </li>
                     <li>
-                      Coordination avec le service technique
-                      pour la gestion des échecs dû a des problèmes d’infrastructure 
+                      Gestions des réclamations 
+                    </li>
+                    <li>
+                      Repérage des pannes réseau sur l’infra sfr
                     </li>
                   </ul>
-                </div>
+                </div>    
               </div>
             </div>
-            <div class="content-main">
-              <div class="date shadow gradien-10">2018 <br> à <br> 2020</div>
-              <div class="fonction">
-                <p class="main-titre shadow" class="underline">Responsable technique </p>
-                <p class="adresse">chez SCELEC prestataire de SFR</p>
+          </div>
+          <!-- section projets -->
+          <div class="titre-section">
+            <img class="img circle" src="./img/experiences.png" alt="">
+            <h4>Projets dans le cadre de la création de mon activité</h4>
+          </div>
+          <div class="projets" id="projets">
+
+            <div class="projet">
+              <p class="underline-v"></p>
+              <div class="date">...</div>
+              <div class="content-projet">
+                <div class="titre-projet shadow">
+                  <h3 class="underline">Secret bèrberes</h3>
+                </div>
+                <p class="underline">une page web statique.
+                </p>
+                <p class="underline"><strong>Technologies: </strong>HTML, CSS</p>
                 <div>
-                  <ul>
-                  <li>
-                    Gestion de Control des techniciens  
-                  </li>
-                  <li>
-                    Gestion des planifications des techniciens 
-                  </li>
-                  <li>
-                    Gestions des réclamations 
-                  </li>
-                  <li>
-                    Repérage des pannes réseau sur l’infra sfr
-                  </li>
-                </ul>
-              </div>
+                  <p>
+                    <i class="fab fa-git-alt"></i>
+                    <a href="https://github.com/adnensaid/cv-adnen">voir code</a>
+                  </p>
+                  <p>
+                    <i class="fab fa-internet-explorer"></i>
+                    <a href="./creations/berberes/index.html">voir page web</a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-  
-          <div class="projet-perso">
-            <h1 class="titre">Projets dans le cadre de la création de mon activité</h1>
-            <div class="content-main">
-              <div class="date shadow gradien-10 en-cours">En <br> cours ...</div>
-              <div class="fonction">
-                <div class="main-titre shadow">Création d’une todo list (une liste de tâches)</div>
-                  <p>Le visiteur pourra simplement ajouter, modifier et supprimer des tâches.</p>
-                  <p><strong>Technologies: </strong>JS, HTML, CSS</p>
+
+            <div class="projet">
+              <p class="underline-v"></p>
+              <div class="date">...</div>
+              <div class="content-projet">
+                <div class="titre-projet shadow">
+                  <h3 class="underline">Agence ledor</h3>
                 </div>
-              </div>
-              <div class="content-main">
-                <div class="date shadow gradien-10 en-cours">En <br> cours ... </div>
-                <div class="fonction">
-                  <div class="main-titre shadow">Création de l'application Losange version 1.0</div>
-                  <p>J'ai eu l'idée dans le cadre de mon ancien emploie de créer une application pour la gestion individuel
-                    de toutes les interventions faites au cours de la journée, avoir une vision mensuel, nombre de succees, echecs et 
-                    connaitre ma prime de rendement.
-                    <a href="https://github.com/adnensaid/Losange">lien</a>
+                <p class="underline">une page web statique de l'agence immobilier ledor.
+                </p>
+                <p class="underline"><strong>Technologies: </strong>HTML, CSS</p>
+                <div>
+                  <p>
+                    <i class="fab fa-git-alt"></i>
+                    <a href="https://github.com/adnensaid/cv-adnen">voir code</a>
                   </p>
-                  <p><strong>Technologies: </strong>JS, HTML, CSS</p>
+                  <p>
+                    <i class="fab fa-internet-explorer"></i>
+                    <a href="./creations/ledor/index.html">voir page web</a>
+                  </p>
                 </div>
               </div>
-          </div>               
-        </div>
-        <div class="creations gradien-10">
-          <h1 class="shadow btn"><a href="#">créations</a></h1>
-          <i class="far fa-hand-point-down"></i>
-          <div class="nom-creation shadow gradien-10">
-            <a href="./losange/index.html">losange</a>
+            </div>
+
+            <div class="smart">
+              <div class="smart-circle"></div>
+            </div>
+            <div class="projet">
+              <p class="underline-v"></p>
+              <div class="date">...</div>
+              <div class="content-projet">
+                <div class="titre-projet shadow">
+                  <h3 class="underline">Animations</h3>
+                </div>
+                <p class="underline">animation: best players & barre de chargement 
+                </p>
+                <p class="underline"><strong>Technologies: </strong>HTML, CSS, animation</p>
+                <div>
+                  <p>
+                    <i class="fab fa-git-alt"></i>
+                    <a href="https://github.com/adnensaid/cv-adnen">voir code</a>
+                  </p>
+                  <p>
+                    <i class="fab fa-internet-explorer"></i>
+                    <a href="./creations/animations/index.html">voir page web</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="smart">
+              <div class="smart-circle"></div>
+            </div>
+            <div class="projet">
+              <p class="underline-v"></p>
+              <div class="date">...</div>
+              <div class="content-projet">
+                <div class="titre-projet shadow">
+                  <h3 class="underline">Sc-elec</h3>
+                </div>
+                <p class="underline">une page web statique de la societe de fibre optique sc-elec.
+                </p>
+                <p class="underline"><strong>Technologies: </strong>HTML, CSS:flex, grid, JS</p>
+                <div>
+                  <p>
+                    <i class="fab fa-git-alt"></i>
+                    <a href="https://github.com/adnensaid/cv-adnen">voir code</a>
+                  </p>
+                  <p>
+                    <i class="fab fa-internet-explorer"></i>
+                    <a href="./creations/scelec/index.html">voir page web</a>
+                  </p>
+                </div>
+              </div>
+            </div>   
+            <div class="smart">
+              <div class="smart-circle"></div>
+            </div>
+            <div class="projet">
+              <p class="underline-v"></p>
+              <div class="date">...</div>
+              <div class="content-projet">
+                <div class="titre-projet shadow">
+                  <h3 class="underline">
+                    Création d’une todo list (une liste de tâches)
+                  </h3>
+                </div>
+                <p class="underline">Le visiteur pourra simplement ajouter, modifier et supprimer des tâches.</p>
+                <p class="underline"><strong>Technologies: </strong>JS, HTML, CSS</p>  
+                <div>
+                  <p>
+                    <i class="fab fa-git-alt"></i>
+                    <a href="https://github.com/adnensaid/cv-adnen">voir code</a>
+                  </p>
+                  <p>
+                    <i class="fab fa-internet-explorer"></i>
+                    <a href="#">voir page web</a>
+                  </p>
+                </div>    
+              </div>
+            </div>
+            <div class="smart">
+              <div class="smart-circle"></div>
+            </div>
+            <div class="projet">
+              <p class="underline-v"></p>
+              <div class="date">...</div>
+              <div class="content-projet">
+                <div class="titre-projet shadow">
+                  <h3 class="underline">Losange version 1.0</h3>
+                </div>
+                <p class="underline">J'ai eu l'idée dans le cadre de mon ancien emploie de créer une application pour la gestion individuel
+                  de toutes les interventions faites au cours de la journée, avoir une vision mensuel, nombre de succees, echecs et 
+                  connaitre ma prime de rendement.
+                </p>
+                <p class="underline"><strong>Technologies: </strong>JS, HTML, CSS</p>
+                <div>
+                  <p>
+                    <i class="fab fa-git-alt"></i>
+                    <a href="https://github.com/adnensaid/cv-adnen">voir code</a>
+                  </p>
+                  <p>
+                    <i class="fab fa-internet-explorer"></i>
+                    <a href="./creations/losange/index.html">voir page web</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="smart">
+              <div class="smart-circle"></div>
+            </div>   
           </div>
-          <div class="nom-creation shadow gradien-10-reverse">
-            <a href="./ledor/index.html">Agence ledor</a>
-          </div>
-          <div class="nom-creation shadow gradien-10">
-            <a href="./animations/kbida/index.html">KBIDA</a>
-          </div>
-          <div class="nom-creation shadow gradien-10-reverse">
-            <a href="./animations/bestPlayers/index.html">Animations</a>
-          </div>
-        </div>
-     
       </div>
-    </section>
+    </div>
   </div>
 </body>
 </html>

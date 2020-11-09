@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-family); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0;
+  font-family: var(--font-family-title); }
+
+ul {
+  list-style: none; }
+
+a {
+  color: var(--text);
+  text-decoration: none; }
+
+p {
+  margin: 1rem 0; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+/* 
+generique */
+.offre {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--text);
+  margin: 0; }
+  .offre p {
+    font-size: 0.5em; }
+
+.through {
+  text-decoration: line-through;
+  font-size: 1.6rem; }
+
+/* pseudo elements */
+.after-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* titles */
+.titre {
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  color: var(--gray); }
+
+.titre-section {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+  color: var(--text); }
+
+/* flex - classes */
+.flex-reverse {
+  flex-direction: row-reverse; }
+
+.justify-end {
+  justify-content: flex-end; }
+
+.justify-start {
+  justify-content: flex-start; }
+
+/* buttons */
+.btn {
+  padding: 2rem 1.5rem;
+  border: 0;
+  border-radius: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+.btn-primary {
+  color: var(--orange);
+  background: #fff; }
+
+.btn-dark {
+  background: var(--dark);
+  color: var(--white); }
+
+@keyframes slid-y {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 0;
+    margin-top: 200px; }
+  50% {
+    opacity: 0;
+    margin-top: 100px; }
+  70% {
+    opacity: 0.2;
+    margin-top: 50px; }
+  90% {
+    opacity: 0.4;
+    margin-top: 25px; }
+  100% {
+    opacity: 1;
+    margin-top: 0; } }
+
+@keyframes slid-x {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes transl-y {
+  from {
+    opacity: 1; }
+  to {
+    transform: translateY(-160px); } }
+
+body {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  background: var(--background); }
+
+.container-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(../../img/berberes/trio/bkg-1.png) center center/cover; }
+
+.header {
+  padding: 2rem 8rem 0 8rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 20px 50px 50px;
+  grid-auto-rows: auto;
+  justify-items: center;
+  grid-template-areas: "skincare . social" ". logo ." ". logo ."; }
+  .header :first-child {
+    grid-area: skincare;
+    padding-right: 1rem; }
+  .header .logo {
+    grid-area: logo;
+    padding: 0 16rem; }
+  .header ul {
+    grid-area: social;
+    display: flex;
+    flex-flow: row nowrap; }
+    .header ul li {
+      padding: 0 2rem 0 0; }
+
+/* article - trio*/
+.trio {
+  padding: 2rem 14rem 0 14rem;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.trio-content {
+  flex: auto;
+  color: var(--gray);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "img titre " "img h1" "img h3" "img paragraphe" "img btn" "img . "; }
+  .trio-content img {
+    grid-area: img;
+    max-width: 100%;
+    padding-top: 6rem; }
+  .trio-content .titre-article {
+    grid-area: titre;
+    color: var(--gray);
+    letter-spacing: 0.6rem;
+    font-size: 1.4rem;
+    margin: 0; }
+  .trio-content h1 {
+    grid-area: h1;
+    font-weight: 300;
+    color: var(--text);
+    font-size: 6.4rem;
+    padding: 2rem 0; }
+  .trio-content h3 {
+    grid-area: h3; }
+    .trio-content h3 p {
+      font-size: 0.5em;
+      margin: 0; }
+  .trio-content .paragraphe {
+    grid-area: paragraphe;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2rem;
+    padding-right: 14rem; }
+  .trio-content .button-article {
+    grid-area: btn;
+    max-width: 250px;
+    text-align: center;
+    align-self: center;
+    color: var(--orange);
+    background: #fff; }
+
+/* vp */
+.container {
+  display: flex;
+  flex-direction: column;
+  /* section - offre */
+  /* secrets */
+  /* services */
+  /* newsletter */
+  /* footer */ }
+  .container .vp-list {
+    flex: auto;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    /* section content */ }
+    .container .vp-list .vp-elem {
+      position: relative;
+      padding-top: 20rem;
+      display: flex; }
+      .container .vp-list .vp-elem .vp-num {
+        flex: 1;
+        position: relative;
+        display: flex;
+        align-items: center; }
+        .container .vp-list .vp-elem .vp-num p {
+          color: white;
+          font-size: 30em; }
+      .container .vp-list .vp-elem .vp-content {
+        flex: 1;
+        max-height: 60rem;
+        overflow: hidden; }
+        .container .vp-list .vp-elem .vp-content nav {
+          padding-top: 2rem; }
+        .container .vp-list .vp-elem .vp-content nav ul {
+          display: flex; }
+          .container .vp-list .vp-elem .vp-content nav ul li {
+            margin-right: 1rem;
+            font-size: 1.4rem; }
+          .container .vp-list .vp-elem .vp-content nav ul li a {
+            padding: 1rem 0.5rem;
+            background: linear-gradient(to top, var(--pink) 50%, var(--background) 50%); }
+        .container .vp-list .vp-elem .vp-content p {
+          padding-top: 1rem;
+          max-width: 450px;
+          font-size: 1.8rem;
+          font-weight: 300; }
+    .container .vp-list .elem-1 .vp-num::after {
+      content: "";
+      background: center left/contain url(../../img/berberes/trio/img-1.png) no-repeat; }
+    .container .vp-list .elem-2 .vp-num::after {
+      content: "";
+      background: center right/contain url(../../img/berberes/trio/img-3.png) no-repeat; }
+    .container .vp-list .elem-3 .vp-num::after {
+      content: "";
+      background: center bottom/contain url(../../img/berberes/trio/img-4.png) no-repeat; }
+  .container .offre-section {
+    flex: auto;
+    padding: 4rem 8rem;
+    position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column; }
+    .container .offre-section .offre-header {
+      position: relative;
+      flex-basis: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .container .offre-section .offre-header img {
+        position: absolute;
+        top: -10rem;
+        max-width: 15rem; }
+    .container .offre-section .commander {
+      flex: auto;
+      display: flex; }
+      .container .offre-section .commander img {
+        flex: 1; }
+      .container .offre-section .commander .commander-content {
+        flex: 1;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column; }
+        .container .offre-section .commander .commander-content hr {
+          margin: 2rem 0;
+          max-width: 80px;
+          border: 0;
+          border: 1px solid var(--text); }
+        .container .offre-section .commander .commander-content ul li {
+          display: flex;
+          margin-bottom: 4rem; }
+          .container .offre-section .commander .commander-content ul li .circle-s {
+            margin: 0 2rem 0 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 2rem; }
+          .container .offre-section .commander .commander-content ul li div h4 {
+            margin: 0; }
+          .container .offre-section .commander .commander-content ul li div p {
+            margin: 0; }
+        .container .offre-section .commander .commander-content .btn {
+          color: white;
+          background: var(--orange); }
+  .container .secrets {
+    flex: auto;
+    line-height: 2.8rem;
+    padding: 8rem 8rem;
+    background: center center/cover url(../../img/berberes/trio/secrets-bkg.jpg) no-repeat;
+    color: white; }
+    .container .secrets h2 {
+      color: white; }
+    .container .secrets p {
+      max-width: 50rem;
+      font-weight: 300; }
+  .container .services {
+    padding: 4rem 8rem;
+    background: var(--background); }
+    .container .services h4 {
+      text-align: center; }
+    .container .services .service-content {
+      padding: 4rem 0;
+      display: flex;
+      justify-content: flex-start;
+      align-content: center; }
+    .container .services .elem {
+      flex: 1;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 6rem;
+      margin: 1rem; }
+      .container .services .elem img {
+        max-width: 50%;
+        max-height: 50%;
+        padding-bottom: 1rem; }
+      .container .services .elem p span {
+        color: var(--orange); }
+  .container .newsletter {
+    background: white;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container .newsletter h4 {
+      font-weight: 300;
+      font-size: 3rem;
+      letter-spacing: 0.3rem;
+      padding: 1rem; }
+    .container .newsletter form {
+      display: flex; }
+      .container .newsletter form input {
+        width: 300px;
+        border: 1px solid var(--background);
+        background: #eee; }
+    .container .newsletter p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 1100px; }
+    .container .newsletter .social {
+      display: flex;
+      align-items: center; }
+      .container .newsletter .social p {
+        flex: auto;
+        font-size: 1.8rem;
+        font-weight: 400; }
+      .container .newsletter .social .social-content {
+        flex: auto;
+        display: flex;
+        align-items: center; }
+        .container .newsletter .social .social-content .fcb {
+          flex: auto;
+          margin: 1rem;
+          padding: 0.5rem 1.3rem;
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;
+          border: 1px solid black; }
+        .container .newsletter .social .social-content .instagram {
+          flex: auto; }
+      .container .newsletter .social .social-content::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--text);
+        border-radius: 40px;
+        background: center center url(../../img/berberes/trio/instagram.png) no-repeat;
+        background-size: 20px 20px; }
+  .container footer {
+    padding: 4rem 8rem;
+    background: center center/cover url(../../img/berberes/trio/footer-bkg.jpg) no-repeat;
+    color: white; }
+    .container footer .footer-content {
+      display: flex; }
+      .container footer .footer-content .logo-footer {
+        flex-basis: 60px;
+        display: flex;
+        align-items: center; }
+      .container footer .footer-content .inside-footer {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*       div{
+        display: flex;
+      } /* /* */ }
+        .container footer .footer-content .inside-footer div {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-auto-rows: auto;
+          grid-template-areas: "ul-1 ul-2 ul-3 ul-4";
+          gap: 4rem; }
+          .container footer .footer-content .inside-footer div div ul:nth-child(1) {
+            grid-area: ul-1; }
+          .container footer .footer-content .inside-footer div div ul:nth-child(2) {
+            grid-area: ul-2; }
+          .container footer .footer-content .inside-footer div div ul:nth-child(3) {
+            grid-area: ul-3; }
+          .container footer .footer-content .inside-footer div div ul:nth-child(4) {
+            grid-area: ul-4; }
+        .container footer .footer-content .inside-footer .footer-titre {
+          font-weight: 700;
+          padding-bottom: 2rem; }
+        .container footer .footer-content .inside-footer ul li {
+          padding: 0.2rem 0;
+          font-size: 1.4rem; }
+  .container .under-footer {
+    background: var(--noir);
+    color: white;
+    position: relative; }
+    .container .under-footer .content-under-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all ease 1s; }
+      .container .under-footer .content-under-footer .contact {
+        position: relative;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .container .under-footer .content-under-footer .contact .cookies {
+          width: 160px;
+          height: 5px;
+          background: white;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          position: absolute;
+          bottom: -5px;
+          transition: all 1s; }
+          .container .under-footer .content-under-footer .contact .cookies a {
+            padding: 0;
+            font-size: 1.5rem;
+            display: none;
+            color: orange;
+            text-decoration: underline; }
+          .container .under-footer .content-under-footer .contact .cookies:hover {
+            transition: all 0.5s;
+            height: 40px; }
+            .container .under-footer .content-under-footer .contact .cookies:hover a {
+              display: block;
+              text-align: center;
+              vertical-align: middle;
+              padding: 10px 0; }
+      .container .under-footer .content-under-footer:hover .cookies {
+        transition: all 1s; }
+      .container .under-footer .content-under-footer .list ul {
+        display: flex; }
+        .container .under-footer .content-under-footer .list ul li {
+          padding: 2rem;
+          font-size: 1.4rem;
+          color: #FFFFFF; }

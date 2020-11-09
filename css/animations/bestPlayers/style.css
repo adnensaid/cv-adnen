@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: var(--text);
+  font-size: 1.4rem;
+  font-family: var(--font-family);
+  line-height: 2rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0 2rem 0;
+  font-family: var(--font-family-title); }
+
+p {
+  margin: 1rem 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: var(--text); }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.underline-left {
+  border-left: 1px solid var(--light); }
+
+.box-background {
+  background: var(--sidebar); }
+
+.shadow {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+
+.hidden {
+  display: none; }
+
+.gradien-vp {
+  background: linear-gradient(to bottom right, white 50%, #f1f2f6 50%); }
+
+.gradien {
+  background: linear-gradient(to bottom right, #fda208 30%, #ddd 70%); }
+
+.gradien-10 {
+  background: linear-gradient(to bottom right, white 80%, #f5a002 20%); }
+
+.gradien-10-reverse {
+  background: linear-gradient(to bottom left, white 80%, #f5a002 20%); }
+
+/* buttons */
+.btn {
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  border: 0;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, white 80%, #f5a002 20%);
+  transition: background 2s; }
+
+.btn:hover {
+  background: orange;
+  color: white; }
+
+/*
+******* icon ******
+*/
+.fa-html5 {
+  color: #dd4b25;
+  font-size: 2.5rem; }
+
+.fa-css3-alt {
+  color: #1a6fb4;
+  font-size: 2.5rem; }
+
+.fa-js {
+  color: #efd81d;
+  font-size: 2.5rem; }
+
+.fa-node-js {
+  color: #74ac5e;
+  font-size: 2.5rem; }
+
+.fa-git-alt {
+  color: #e84e31;
+  font-size: 2.5rem; }
+
+/*
+******* chargements ... ******
+*/
+.en-cours {
+  animation-name: chargement;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 1; }
+
+@keyframes chargement {
+  from {
+    opacity: 1;
+    transform: translateY(-20px); }
+  to {
+    opacity: 0.5; } }
+
+/*
+****  - transform *****
+*/
+.date {
+  cursor: pointer;
+  transition: all 0.5s; }
+
+.date:hover {
+  /*
+  transform: rotate(30deg);
+  */
+  transform: rotate(30deg); }
+
+/*
+**** date ***
+*/
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+  display: block; }
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: #2c3e50; }
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #95a5a6;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  border: 1px solid #ecf0f1;
+  background: #ecf0f1;
+  padding: 5px;
+  display: inline-block !important;
+  visibility: visible !important; }
+
+input[type="date"], focus {
+  color: #95a5a6;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none; }
+
+/*
+****** varaibles *****
+*/
+.underline {
+  width: 5px;
+  height: 5px;
+  color: green;
+  background: green;
+  opacity: 0; }
+
+.underline-incliner {
+  width: 1px;
+  height: 1px;
+  background: black;
+  animation: uncliner 1s ease-in-out 1s forwards;
+  animation-direction: alternate;
+  opacity: 0; }
+
+@keyframes uncliner {
+  from {
+    opacity: 0;
+    width: 5px; }
+  to {
+    opacity: 1;
+    transform: rotate(30deg);
+    width: 50px; } }
+
+.underline-animate {
+  animation-name: underline-animate;
+  animation: underline-animate 2s ease-in-out 4s forwards; }
+
+@keyframes titre-background {
+  from {
+    background: #eee; }
+  to {
+    background: linear-gradient(to left bottom, #eee 80%, green 20%); } }
+
+@keyframes underline-animate {
+  from {
+    opacity: 0;
+    width: 20px; }
+  to {
+    opacity: 1;
+    width: 100%; } }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.titre-page {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  background: var(--sidebar);
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  animation: titre-background 1s ease-in-out 5s forwards; }
+
+.contenu-list {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0; }
+
+.app {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+
+.app-1 {
+  opacity: 0;
+  animation: app-1 1s ease-in-out 1s forwards; }
+
+@keyframes app-1 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.app-2 {
+  opacity: 0;
+  animation: app-2 1s ease-in-out 3s forwards; }
+
+.app-3 {
+  opacity: 0;
+  animation: app-3 1s ease-in-out 4s forwards; }
+
+@keyframes app-2 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes app-3 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.app .titre {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: green;
+  border-radius: 50px;
+  border: 10px solid #aaa;
+  color: white;
+  font-size: 2.5rem; }
+
+.app .paragraphe {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  opacity: 0;
+  animation-name: animate-p;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in; }
+
+.app .p-1 {
+  animation-delay: 1.8s; }
+
+.app .p-2 {
+  animation-delay: 3s; }
+
+.app .p-3 {
+  animation-delay: 4s; }
+
+@keyframes animate-p {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.app .animate-rotation {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in;
+  opacity: 0; }
+
+.app .animate-1 {
+  color: white; }
+
+.app .animate-2 {
+  animation-delay: 2s; }
+
+.app .animate-3 {
+  animation-delay: 3s; }
+
+@keyframes rotation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1;
+    transform: rotate(360deg); } }
+
+.box-test {
+  background: #eee;
+  margin: 2rem;
+  opacity: 1;
+  width: 100%; }
+
+.animate-box {
+  animation-name: box;
+  animation-fill-mode: forwards;
+  animation-duration: 4s; }
+
+.animate-box-1 {
+  animation-delay: 1s; }
+
+.animate-box-2 {
+  animation-delay: 3s; }
+
+.animate-box-3 {
+  animation-delay: 4s; }
+
+@keyframes box {
+  0% {
+    width: 5px;
+    opacity: 0; }
+  25% {
+    opacity: 1;
+    width: 400px;
+    border-bottom: 5px solid green; }
+  50% {
+    opacity: 1;
+    width: 400px; }
+  75% {
+    opacity: 1;
+    width: 400px; }
+  100% {
+    opacity: 1;
+    width: 400px;
+    border-bottom: 5px solid green; } }

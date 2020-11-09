@@ -1,5 +1,6 @@
 :root {
-  --font-family: 'Raleway', sans-serif;
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-title:'Oswald', sans-serif;
   --font-family-secondary: 'Shadows Into Light', cursive;
   --ledor: 'Montserrat', sans-serif;
   --ledor-secondary: 'Long Cang', cursive;
@@ -10,4 +11,9 @@
   --text:#333333;
   --background:#ffffff;
   --sidebar:#f5f5f5;
-  --border:#473714; }
+  --border:#473714;
+  --hint:#aaa;
+  --linkedin:#2779aa;
+  --twitter:#1c9cea;
+  --facebook:#4064ac;
+  --vp:#74b9ff; }

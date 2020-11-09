@@ -1,0 +1,14 @@
+.underline{
+  display: none;
+}
+
+.app{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.animate-box{
+  animation-name: box;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}  
