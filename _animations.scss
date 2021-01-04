@@ -1,0 +1,125 @@
+/* screen animation */
+@keyframes path-screen{
+  0%{
+    d: path('M0');
+  }
+  20%{
+    d: path('M0,29.697v246.015v15v89');
+  }
+  40%{
+    d: path('M0,29.697v246.015v15v89.091h190.997v80.5h-74.608v15h272.223v-15h-74.608v-80.5H505v-89');
+  }
+  60%{
+    d: path('M0,29.697v246.015v15v89.091h190.997v80.5h-74.608v15h272.223v-15h-74.608v-80.5H505v-89.091v-15   V29');
+  }
+  80%{
+    d: path('M0,29.697v246.015v15v89.091h190.997v80.5h-74.608v15h272.223v-15h-74.608v-80.5H505v-89.091v-15   V29.697H0z M299');
+  }
+  100%{
+    d: path('M0,29.697v246.015v15v89.091h190.997v80.5h-74.608v15h272.223v-15h-74.608v-80.5H505v-89.091v-15   V29.697H0z M299.003') !important;
+        
+  }
+}
+
+
+/* underline */
+
+@keyframes underline{
+0%{
+  width: 60%;
+}
+50%{
+  width: 80%;
+}
+100%{
+  width: 100%;
+}
+}
+
+
+/* progressions */
+
+@keyframes progression-html{
+/*   form{
+    grid-row: 4 / 5;
+  }
+  to{
+    grid-row: 1 / 5;
+    background: var(--green);
+  } */
+  0%{
+    grid-row: 5 / 6;
+    background: var(--red);
+  }
+  25%{
+    grid-row: 4 / 6;
+    background: var(-red-light);
+  }
+  50%{
+    grid-row: 3 / 6;
+    background: var(--orange);
+  }
+  75%{
+    grid-row: 2 / 6;
+    background: var(--orange-light);
+  }
+  100%{
+    grid-row: 1 / 6;
+    background: var(--green-light);
+  }  
+
+
+}
+@keyframes progression-css{
+  0%{
+    grid-row: 5 / 6;
+    background: var(--red);
+  }
+  33%{
+    grid-row: 4 / 6;
+    background: var(--orange);
+  }
+  66%{
+    grid-row: 3 / 6;
+    background: var(--orange-light);
+  }
+  100%{
+    grid-row: 2 / 6;
+    background: var(--green-light);
+  }   
+}
+
+@keyframes progression-js{
+  0%{
+    grid-row: 5 / 6;
+    background: var(--red);
+  }
+  50%{
+    grid-row: 4 / 6;
+    background: var(-red-light);
+  }
+  100%{
+    grid-row: 3 / 6;
+    background: var(--yellow);
+  }
+}
+@keyframes progression-node{
+  0%{
+    grid-row: 5 / 6;
+    background: var(--red);
+  }
+  100%{
+    grid-row: 4 / 6;
+    background: var(--orange);
+  } 
+}
+@keyframes progression-git{
+  0%{
+    grid-row: 5 / 6;
+    background: var(--red);
+  }
+  100%{
+    grid-row: 4 / 6;
+    background: var(--orange);
+  } 
+}

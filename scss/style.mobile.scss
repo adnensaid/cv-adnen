@@ -1,25 +1,29 @@
-.container{
-  width: 100%;
-}
-.header{
+/* Landscape phones and down */
+@mixin xs {
+  @media (max-width: 480px){
+    @content;
+  }
   
 }
-.header .job{
-  //display: none;
+
+/* Landscape phone to portrait tablet */
+@mixin sm {
+  @media (max-width: 767px){
+    @content;
+  }  
 }
-.vp .main{
-  //display: none;
-}
-.header{
-  display: flex;
-  flex-direction: column-reverse;
-}
-.vp{
-  display: flex;
-  flex-direction: column;
-  .sidebar{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+
+/* Portrait tablet to landscape and desktop */
+@mixin md {
+  @media (min-width: 768px) and (max-width: 979px){
+    @content;
   }
+  
+}
+
+/* Large desktop */
+@mixin xl {
+  @media (min-width: 1200px){
+    @content;
+  }  
 }

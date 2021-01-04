@@ -1,0 +1,111 @@
+.active{
+  color: var(--blue-light);
+}
+
+.title{
+  
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  margin: 2rem 0;
+  &-large{
+    font-size: 2rem;
+  }
+  &-small{
+    font-size: 1.8rem;
+  }
+}
+/* buttons */
+.btn{
+  border: 0;
+  display: inline-block;
+  margin: 2rem 0;
+  cursor: pointer;
+  &-primary{
+    background: var(--blue-light);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.6rem;  
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+  }
+  &-small{
+    background: var(--green);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+  }
+  &-small-white{
+    background: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--text);
+  }
+}
+
+
+
+
+
+.hidden{
+  display: none;
+}
+
+.box-background{
+  background: var(--sidebar);
+}
+.shadow{
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+
+}
+
+.gradien-vp{
+  background: linear-gradient(to bottom right, white 50%,  #f1f2f6 50%);
+}
+
+
+
+/*
+******* icon ******
+*/
+.fa-html5{
+  color: #dd4b25;
+  font-size: 2.5rem;
+}
+.fa-css3-alt{
+  color:#1a6fb4;
+  font-size: 2.5rem;
+  
+}
+.fa-js{
+  color: #efd81d;
+  font-size: 2.5rem;
+}
+.fa-node-js{
+  color: #74ac5e;
+  font-size: 2.5rem;
+}
+.fa-git-alt{
+  color: #e84e31;
+  font-size: 2.5rem;
+}
+/*
+******* chargements ... ******
+*/
+
+.en-cours{
+  animation-name: chargement;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 1;
+}
+
+@keyframes chargement{
+  from{
+    opacity: 1;
+    transform: translateY(-20px);
+  }to{
+    opacity: 0.5;
+
+  }
+}

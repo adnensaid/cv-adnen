@@ -3,9 +3,7 @@ html{
 }
 body{
   color: var(--text);
-  font-size: 1.4rem;
   font-family: var(--font-family);
-  line-height: 2rem;
 }
 h1,
 h2,
@@ -13,7 +11,7 @@ h3,
 h4,
 h5,
 h6{
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   font-family: var(--font-family-title);
 }
 
@@ -31,145 +29,3 @@ img{
   max-width: 100%;
   
 }
-.underline-left{
-  border-left: 1px solid var(--light);
-}
-.box-background{
-  background: var(--sidebar);
-}
-.shadow{
-  box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-
-}
-.hidden{
-  display: none;
-}
-.gradien-vp{
-  background: linear-gradient(to bottom right, white 50%,  #f1f2f6 50%);
-}
-.gradien{
-  background: linear-gradient(to bottom right, #fda208 30%, #ddd 70%);
-}
-.gradien-10{
-  background: linear-gradient(to bottom right, white 80%, #f5a002 20%);
-
-}
-.gradien-10-reverse{
-  background: linear-gradient(to bottom left, white 80%, #f5a002 20%);
-}
-
-/* buttons */
-.btn{
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    border: 0;
-    padding: 1rem;
-    background: linear-gradient(to bottom right, white 80%, #f5a002 20%);
-    transition: background 2s;
-
-}
-.btn:hover{
-  //background: linear-gradient(to top left, #eee 80%, #f5a002 20%);
-  background:orange;
-  color: white;
-
-}
-
-
-/*
-******* icon ******
-*/
-.fa-html5{
-  color: #dd4b25;
-  font-size: 2.5rem;
-}
-.fa-css3-alt{
-  color:#1a6fb4;
-  font-size: 2.5rem;
-  
-}
-.fa-js{
-  color: #efd81d;
-  font-size: 2.5rem;
-}
-.fa-node-js{
-  color: #74ac5e;
-  font-size: 2.5rem;
-}
-.fa-git-alt{
-  color: #e84e31;
-  font-size: 2.5rem;
-}
-/*
-******* chargements ... ******
-*/
-
-.en-cours{
-  animation-name: chargement;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  opacity: 1;
-}
-
-@keyframes chargement{
-  from{
-    opacity: 1;
-    transform: translateY(-20px);
-  }to{
-    opacity: 0.5;
-
-  }
-}
-/*
-****  - transform *****
-*/
-.date{
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.date:hover{
-  /*
-  transform: rotate(30deg);
-  */
-  transform: rotate(30deg);
-
-}
-
-/*
-**** date ***
-*/
-
-/* Removes the spin button */
-input[type="date"]::-webkit-inner-spin-button { 
-  display: block;
-}
-
-/* Always display the drop down caret */
-input[type="date"]::-webkit-calendar-picker-indicator {
-  color: #2c3e50;
-}
-
-/* A few custom styles for date inputs */
-input[type="date"] {
-  appearance: none;
-  -webkit-appearance: none;
-  color: #95a5a6;
-  font-family: "Helvetica", arial, sans-serif;
-  font-size: 18px;
-  border:1px solid #ecf0f1;
-  background:#ecf0f1;
-  padding:5px;
-  display: inline-block !important;
-  visibility: visible !important;
-}
-
-input[type="date"], focus {
-  color: #95a5a6;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-}
-

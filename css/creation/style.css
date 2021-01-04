@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: var(--text);
+  font-size: 1.6rem;
+  font-family: var(--font-family); }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-title); }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: var(--text); }
+
+img {
+  max-width: 100%; }
+
+.shadow {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+
+.titre-list {
+  font-family: var(--font-family-title);
+  font-size: 5rem;
+  background: var(--red);
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
+  .container .creation-list .content-list {
+    background: var(--gray-light);
+    margin: 1rem;
+    border-top: 2px solid var(--gray);
+    font-weight: 700; }
+    .container .creation-list .content-list li {
+      padding: 1rem;
+      border-bottom: 1px solid var(--white);
+      transition: all 0.2s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-left: 4px solid transparent; }
+      .container .creation-list .content-list li .sub-nav {
+        display: flex;
+        font-size: 1rem; }
+        .container .creation-list .content-list li .sub-nav .site {
+          border: none; }
+          .container .creation-list .content-list li .sub-nav .site a {
+            font-weight: 400;
+            background: var(--yellow);
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--text);
+            transition: all 1s; }
+            .container .creation-list .content-list li .sub-nav .site a:hover {
+              transform: scale(1.1); }
+        .container .creation-list .content-list li .sub-nav .detail {
+          border: none; }
+          .container .creation-list .content-list li .sub-nav .detail a {
+            background: var(--green);
+            font-weight: 400;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--text);
+            transition: all 1s; }
+            .container .creation-list .content-list li .sub-nav .detail a:hover {
+              transform: scale(1.1); }
+      .container .creation-list .content-list li:hover {
+        background: var(--white);
+        border-left: 4px solid var(--dark);
+        cursor: pointer; }
+        .container .creation-list .content-list li:hover .sub-nav a {
+          transform: scale(1.1); }
+
+/* header */

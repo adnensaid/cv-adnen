@@ -1,0 +1,28 @@
+:root {
+  --font-family: 'Lato', sans-serif;
+  --font-family-title:'Lato', sans-serif;
+  --text:#333;
+  --red-light:#ff6b6b;
+  --red:#ee5253;
+  --green:#10ac84;
+  --green-light:#1dd1a1;
+  --blue:#2e86de;
+  --blue-light:#54a0ff;
+  --gray:#f1f2f6;
+  --gray-light:#f1f2f6;
+  --dark:#2f3542;
+  --dark-light:#57606f;
+  --yellow:#fed330;
+  --yellow-light:#f7b731;
+  --orange:#fa8231;
+  --orange-light:#fd9644;
+  --white:#ffffff;
+  --text-light:rgba(0,0,0,.5);
+  --pink:#ebd4d4;
+  --brown:#d5ae69;
+  --brown-light:#d4ac66;
+  --orange:#d4ac66;
+  --dark: #343434;
+  --white:#fff;
+  --background:#faf4f4;
+  --noir:#000; }
