@@ -1,0 +1,214 @@
+@import "reset";
+@import "base";
+@import "classes";
+@import "media-queries";
+body{
+  font-family: var(--font-family-youtube);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+/* classes */
+.video-text-hint{
+  color: var(--youtube-icon);  
+  font-size: 1.4rem;
+}
+i{
+  color: var(--youtube-icon);  
+}
+
+.container-youtube{
+  min-height: 100vh;
+  background: var(--youtube-background);
+  display: grid;
+  grid:
+    "navbar navbar navbar" auto
+    "main main sidebar" 1fr / 1fr 1fr 1fr;
+    gap: 2rem;
+  .navbar{
+    grid-area: navbar;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem 2rem;    
+    background:var(--youtube-navbar);
+    .navbar-elem{
+      display: flex;
+      flex-flow: row nowrap;
+      .navbar-elem-img{
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;  
+
+      }
+      &:first-child{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        p{
+          font-weight: 400;
+          font-size: 1.8rem;
+          color: var(--white);
+          letter-spacing: -0.1rem;
+          padding: 0 0.2rem;
+          position: relative;
+          &::after{
+            content: "FR";
+            font-size: 1rem;
+            letter-spacing: 0.05rem;
+            font-weight: 100;
+            color: var(--gray);
+            position: absolute;
+            top: 0;
+
+          }
+        }
+        .navbar-elem-img{
+          &:first-child{
+            margin-right: 2rem;
+          }
+        }
+      }
+      &:last-child{
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        .navbar-elem-img{
+          margin: 0 1rem;
+          padding: 0.3rem;
+          position: relative;
+          &:nth-child(3)::after{
+            content: "9+";
+            border: 1px solid var(--red);
+            font-size: 1rem;
+            color: var(--white);
+            border-radius: 100%;
+            padding: 0.2rem;
+            background: red;
+            position: absolute;
+            top: -0.5rem;
+            right: -0.5rem;
+          }
+        }
+      }
+      &:nth-child(2){
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        form{
+          padding: 0.5rem;
+          min-width: 60rem;
+          display: flex;
+          flex-flow: row nowrap;
+          input{
+            flex: 1;
+            margin: 0;
+            padding: 0.8rem;
+            border: 0;
+            outline: 0;
+            z-index: 1;
+            background: var(--youtube-background);
+            border: 0.1px solid var(--youtube-navbar-light);
+            &:focus{
+              border-radius: 0;
+              outline: 0.1rem solid blue;
+              color: var(--white);
+            }
+          }
+          button{
+            flex-basis: 6rem;
+            margin: 0;
+            padding: 0.8rem;
+            border-radius: 0;
+            border: 0;
+            z-index: 0;
+            background: var(--youtube-navbar-light);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            .submit-img{
+              width: 1.2rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        .navbar-elem-img{
+          padding: 0.3rem;
+
+        }  
+      }
+    }
+  }
+  .sidebar{
+    grid-area: sidebar;
+
+    .videos-list{
+      display: flex;
+      flex-direction: column;
+      .video-elem{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-bottom: 1rem;
+        .video{
+          flex: 1;
+          height: 12rem;
+          border: 1px solid var(--text);
+          margin: 0 0.5rem;
+          background:var(--gray);
+        }
+        .video-text{
+          flex: 1;
+          margin: 0 0.5rem;
+          padding-left: 0.5rem;
+          padding-right: 3rem;
+          .video-titre{
+            color: var(--white);
+            font-size: 1.4rem;
+          }
+          p{
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+    
+
+  }
+  .main{
+    grid-area: main; 
+    padding: 0 2rem;    
+    .video-principal{
+      height: 50rem;
+      background: var(--gray);
+    }
+    .video-principal-titre{
+      color: var(--white);
+      font-size: 1.8rem;
+    }  
+    .actions{
+      color: var(--youtube-icon);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--text);
+      .actions-icons{
+        cursor: pointer;
+        i{
+          margin: 0 1rem;
+        }    
+      }
+    }
+  }  
+}
+
+ 
