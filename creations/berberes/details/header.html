@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+  <link rel="stylesheet" href="../../../css/varaibles.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <title>creations</title>
+</head>
+<body>
+  <div class="container-grid detail-page">
+    <header class="header">
+      <div class="logo">
+        <a href="#" class="logo-elem">
+            <img src="../../../img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img">
+        </a>
+      </div>  
+      <ul class="nav-left">
+        <li><a href="../../../index.html" class="active">Accueil</a></li>
+        <li class="text-primary"><a href="../../../creations/index.html">Projets</a></li>
+        <li><a href="#">Contact</a></li> 
+      </ul>
+      <ul class="nav-right">
+        <li class="nav-right-elem">
+          <a href="#">
+            <img src="../../../img/images-layout/github.svg" alt="">
+          </a>
+        </li>
+        <li class="nav-right-elem">
+          <a href="#">
+            <img src="../../../img/images-layout/linkedin.svg" alt="">
+          </a>
+        </li>       
+      </ul>    
+    </header>
+    <div class="profil">
+      <div class="profil-titre">
+        <p class="dev">Said Adnen</p>
+      </div>
+      <div class="profil-img">
+        <img src="../../../img/images-layout/adnensaid.jpg" alt="">
+      </div>     
+    </div>
+    <main class="main">
+  <h1 class="titre-list">Mise en place du header</h1>
+  <div class="content-page">
+    <h2>Structure</h2>
+    <div class="code">
+      <pre>
+        &lt;div class="banner-container">
+        &lt;header class="header">
+          &lt;div class="skincare">
+            &lt;a href="#" class="skincare-img">&lt;/a>
+            &lt;div class="skincare-text">&lt;p>Tous nos coffrets Secrets berbères&lt;/p>&lt;/div>    
+          &lt;/div>
+          &lt;div class="logo">
+            &lt;a href="#">&lt;img src="../../img/berberes/trio/logo.png" alt="">&lt;/a>
+          &lt;/div>
+          &lt;div class="social">
+            &lt;a href="#" class="social-img">
+            &lt;/a>
+            &lt;a href="#" class="social-img">
+            &lt;/a>
+            &lt;p class="social-text">
+              &lt;a href="#">Contact&lt;/a>  
+            &lt;/p>
+          &lt;/div>
+        &lt;/header>
+        &lt;section class="banner">
+          &lt;div class="images">
+            &lt;div class="img-1">&lt;/div>
+            &lt;div class="img-2">&lt;/div>
+          &lt;/div>
+          &lt;div class="content">
+            &lt;p class="titre-article">COFFRET&lt;/p>
+            &lt;h1>Trio de roses&lt;/h1>
+            &lt;h3 class="offre">Offre spécial à 59€ &lt;br>&lt;p>au lieu de &lt;span class="through">73€&lt;/span>&lt;/p>&lt;/h3>
+            &lt;p class="paragraphe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis rem earum perspiciatis est deserunt? Officiis, cum corporis commodi sapiente,
+                at nihil odio voluptas cumque accusamus, ipsum eos! Esse, recusandae maxime!
+            &lt;/p>
+            &lt;div class="button-article">
+              &lt;button class="btn btn-primary shadow">J'EN PROFITE MAINTENANT&lt;/button>       
+            &lt;/div>    
+          &lt;/div>        
+        &lt;/section> 
+      &lt;/div>      
+      </pre>    
+    </div>
+    <p>
+      Nous avons un conteneur global banner-container a l'interieur on as 2 enfants : header et une section banner
+      Dans header on  3 elements une div de classe skincare une div de classe logo et une div de classe social  
+    </p>
+    <pre>
+      .banner-container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background:center center / cover url(../../../img/berberes/trio/bkg-1.png) no-repeat;  
+      }  
+    </pre>
+    <p>
+      le conteneur as une taille minimale de <strong>100vh</strong>
+      il as une hauteur au minimun de la hauteur de la zone d'affichage du navigateur
+      on le dispose en <strong>flex</strong> ce qui en fait un conteneur flexible
+      pour <strong>header</strong> et <strong>banner</strong>
+      on fixe la direction à <strong>column</strong> pour que le <strong>header</strong>
+      soit au dessus.
+      on positionne une image en arrière-plan en utilisant une <strong>url</strong>
+      on centre l'image horizontalement et verticalement avec <strong>center center, </strong>
+      <strong>cover</strong> pour recouvrrir l'espace disponible.
+    </p>
+    <div class="code">
+      <pre>
+        .header{
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          font-size: 1.4rem;
+          line-height: 1.2rem;    
+          .skincare{
+            flex:1 ;
+            display: flex;
+            flex-flow: row nowrap;
+            min-height: 2rem;
+            .skincare-img{
+              flex-basis: 2rem;
+              background: url(../img/berberes/trio/skincare.png) no-repeat;
+              background-size: cover;
+              img{
+                max-width: 100%;
+              }
+            }
+            .skincare-text{
+              flex: auto;
+              display: flex;
+              align-items: flex-end;
+              p{
+                margin: 0;
+              }
+            }
+          }
+          .logo{
+            max-width: 8rem;
+          }
+          .social{
+            flex: 1;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            min-height: 2rem;
+            .social-img{
+              flex-basis: 2rem;
+              margin: 0 1rem;
+              &:nth-child(1){
+                background: center center url(../img/berberes/trio/facebook.png) no-repeat;
+                background-size: contain;
+              }
+              &:nth-child(2){
+                background: url(../img/berberes/trio/instagram.png) no-repeat;
+                background-size: cover;
+              }  
+              img{
+                max-width: 100%;
+                max-height: 100%;
+              }  
+            }
+            .social-text{
+              margin: 0;
+              display: flex;
+              align-items: flex-end;
+            }
+          }
+      </pre>    
+    </div>
+    <p>
+      pour le header on as 3 elements on le dispose en flex ce 
+      qui fait un conteneur flexible pour <strong>skincare</strong>,
+      <strong>logo</strong> et <strong>social</strong>
+      nous utilisons <strong>align-items: flex-start</strong> car nous voulons que les elements 
+      prennent le minimum de l'espace disponible, on fixe <strong>flex : 1</strong> pour 
+      <strong>skincare</strong> et <strong>social</strong> pour centrer le <strong>logo</strong>
+      et <strong>justify-content:flex-end</strong> à <strong>social</strong> pour le mettre à droite
+      pour aligner la photo <strong>skincare</strong> et le text on ajoute la photo
+      en background dans <strong>skincare-img</strong> et on dispose en flex 
+      <strong>skincare-text</strong> et on fixe <strong>align-items:flex-end</strong>
+      pour qu'il soit poisitionné en bas de la photo.
+    </p>
+    <div class="code">
+      <pre>
+        .banner{
+          flex: auto;
+          display: flex; 
+          flex-flow: row nowrap;
+          .images{
+            flex: 1;
+            position: relative;
+            margin-top: 6rem;
+            margin-left: 10rem;
+            .img-1{
+              position: absolute;
+              //left: 6rem;
+              width: 75%;
+              height: 75%;
+              z-index: 0;
+              background: url(../../../img/berberes/trio/rosace.svg) no-repeat;
+              background-size: contain;
+            }
+            .img-2{
+              position: absolute;
+              //left: 6rem;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              background: url(../../../img/berberes/trio/img-2.png) no-repeat;
+              background-size: contain;
+            }      
+          } 
+          .content{
+            flex: 1;
+            padding-top: 4rem;
+            padding-left: 2rem;
+            .titre-article{
+              color: var(--text);
+              letter-spacing: 0.6rem;
+              font-size: 1.4rem;
+              margin: 0;
+              
+            }
+            h1{
+              font-weight: 300;
+              color:var(--text);
+              font-size: 6.4rem;
+              padding: 4rem 0;
+              
+            }
+            h3{
+          
+              grid-area: h3;
+              
+              p{
+                font-size: 0.5em;
+                margin: 0;
+                
+              }
+            }
+            .paragraphe{
+              grid-area: paragraphe;
+              font-size: 1.2rem;
+              font-weight: 300;
+              padding: 2rem 0;
+              margin: 0;
+              padding-bottom: 2rem;
+              padding-right: 14rem;
+            }
+            .button-article{
+      
+              margin: 2rem 0;
+              max-width: 250px;
+              text-align: center;
+              align-self: center;
+              color: var(--orange);
+              background: #fff;
+              
+            }  
+          }
+        }     
+      </pre>    
+    </div>
+    <p>
+      Dans la section <strong>banner</strong> on as 2 elements on le 
+      dispose en <strong>flex</strong> ce qui en fait un conteneur flexible
+      pour <strong>images</strong> et <strong>content</strong> et on fixe la direction a <strong>row</strong>
+      on les mettent un <strong>flex:1</strong> pour qu'ils partagent
+      l'espace disponible. <br>
+      Pour superposer les deux images on fixe le conteneur images en position relative et les element enfants ou on trouve les 2 images en position absolute 
+      On met z-index égale a 1 à l’image 2  pour quelle soit au dessus de l’image 1.
+      <strong>Background-size : contain</strong> pour agrandir les images autant que possible sans la rogner ou l’étirer  
+
+    </p>
+  </div>
+  </main>
+  <aside class="sidebar">   
+    <div class="block">
+      <div class="details">
+        <div class="details-img">
+          <img src="../../../img/berberes/header-banner.png" alt="">
+        </div>
+        <h2>Methodes utilisées</h2>
+        <div class="details-list">
+          <div class="detail-elem">
+            <div class="detail-elem-num">1</div>
+            <p class="detail-elem-text">Flex</p>
+          </div>
+          <div class="detail-elem">
+            <div class="detail-elem-num">2</div>
+            <p class="detail-elem-text">Creation de classe generique <strong>btn</strong> et <strong>btn-primary</strong> pour les bouttons,  voir partial _classes</p>
+          </div>  
+          <div class="detail-elem">
+            <div class="detail-elem-num">3</div>
+            <p class="detail-elem-text">
+              Creation de classe generique
+              <strong>through</strong> pour les reductions,
+              en utlisant le pseudo-element <strong>after</strong>
+              voir partial _classes. <br>
+              <span>J'aurais pu utlisier <strong>text-decoration</strong></span>
+    
+            </p>
+          </div>    
+          <div class="detail-elem">
+            <div class="detail-elem-num">4</div>
+            <p class="detail-elem-text">superposer les 2 images: Z-index & positionnement relative et absolute</p>
+          </div>      
+        </div>  
+      </div>
+    </div>  
+  </aside>
+  </div>  
+</body>
+</html>

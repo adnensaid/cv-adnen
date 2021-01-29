@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+  <link rel="stylesheet" href="../../../css/varaibles.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <title>creations</title>
+</head>
+<body>
+  <div class="container-grid detail-page">
+    <header class="header">
+      <div class="logo">
+        <a href="#" class="logo-elem">
+            <img src="../../../img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img">
+        </a>
+      </div>  
+      <ul class="nav-left">
+        <li><a href="../../../index.html" class="active">Accueil</a></li>
+        <li class="text-primary"><a href="../../../creations/index.html">Projets</a></li>
+        <li><a href="#">Contact</a></li> 
+      </ul>
+      <ul class="nav-right">
+        <li class="nav-right-elem">
+          <a href="#">
+            <img src="../../../img/images-layout/github.svg" alt="">
+          </a>
+        </li>
+        <li class="nav-right-elem">
+          <a href="#">
+            <img src="../../../img/images-layout/linkedin.svg" alt="">
+          </a>
+        </li>       
+      </ul>    
+    </header>
+    <div class="profil">
+      <div class="profil-titre">
+        <p class="dev">Said Adnen</p>
+      </div>
+      <div class="profil-img">
+        <img src="../../../img/images-layout/adnensaid.jpg" alt="">
+      </div>     
+    </div>
+    <main class="main">
+      <h1 class="titre-list">Mise en place du layout</h1>
+      <div class="content-page">
+        <h2>Objectifs</h2>
+        <p>
+          Mise en place du layout en utilisant les grid
+        </p>
+        <div class="code">
+          <pre>
+            &lt;div class="navbar">
+            &lt;h1>navbar &lt;/h1>
+          &lt;/div>
+          &lt;aside class="sidebar">
+            &lt;h1>sidebar &lt;/h1>
+          &lt;/aside>
+          &lt;main class="main">
+            &lt;h1>main &lt;/h1>
+          &lt;/main>
+          </pre>    
+        </div>
+        <div class="code">
+          <pre>
+            @import "reset";
+            @import "base";
+            @import "classes";
+            @import "media-queries";
+            body{
+              font-family: var(--font-family-youtube);
+              font-weight: 400;
+              font-size: 1.6rem;
+            }
+            .container-youtube{
+              min-height: 100vh;
+              background: var(--youtube-background);
+              display: grid;
+              grid:
+                "navbar navbar navbar" auto
+                "main main sidebar" 1fr / 1fr 1fr 1fr;
+             
+              .navbar-1{
+                grid-area: navbar;
+                background: var(--youtube-navbar);
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+              }
+              .sidebar{
+                grid-area: sidebar;
+                border: 1px solid var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .main{
+                grid-area: main;
+                border: 1px solid var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+              }  
+            }    
+          </pre>
+        </div>
+      </div>
+    </main>    
+    <aside class="sidebar">
+      <div class="block">
+        <div class="block-img">
+          <img src="../../../img/youtube-img/layout.png" alt="">
+        </div>
+      </div>
+    </aside>
+  </div>  
+</body>
+</html>

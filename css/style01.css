@@ -58,11 +58,13 @@ img {
     border-radius: 5px;
     padding: 0.5rem 2rem; }
   .btn-small {
+    outline: 0;
     background: var(--green);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: var(--white); }
   .btn-small-white {
+    outline: 0;
     background: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;

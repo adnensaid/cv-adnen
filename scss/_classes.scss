@@ -1,9 +1,70 @@
+.annuler-x{
+  position: relative;
+  background: var(--white);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover{
+    background: var(--blue);
+    color: var(--white);
+  }
+  &::after{
+    content: 'X';
+    position: absolute;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background:var(--red);
+    color: var(--white);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;     
+  }
+   
+}
+.through{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 0.2rem;
+    background: var(--text);
+  }
+}
+.quote{
+  font-style: italic;
+  &::before{
+    content: "\AB";
+    padding: 0 0.5rem;
+
+  }
+  &::after{
+    content: "\BB";
+    padding: 0 0.5rem;
+  }
+}
+
 .active{
   color: var(--blue-light);
 }
+.hidden{
+  display: none;
+}
+/* text */
+
+.text-hint{
+  color: var(--text);
+  font-size: 1.6rem;
+  font-weight: 100;
+}
 
 .title{
-  
   letter-spacing: 0.2rem;
   cursor: pointer;
   margin: 2rem 0;
@@ -17,35 +78,50 @@
 /* buttons */
 .btn{
   border: 0;
-  display: inline-block;
   margin: 2rem 0;
+  font-size: 1.6rem;  
+  border-radius: 5px;  
+  outline: 0;
   cursor: pointer;
   &-primary{
     background: var(--blue-light);
     color: var(--white);
-    font-weight: 700;
-    font-size: 1.6rem;  
-    border-radius: 5px;
     padding: 0.5rem 2rem;
+    font-weight: 700;
+  }
+  &-primary-berberes{
+    background: var(--white);
+    color: var(--orange);
+    padding: 2rem 1rem;
+    font-weight: 700;
+
+  }
+  &-secondary-berberes{
+    background: var(--text);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    font-weight: 700;
+
+  }  
+  &-det{
+    background: linear-gradient(to top, var(--pink) 50%, var(--background) 50% );
+    padding: 1rem;
   }
   &-small{
+    outline: 0;
     background: var(--green);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: var(--white);
   }
   &-small-white{
+    outline: 0;
     background: var(--white);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: var(--text);
   }
 }
-
-
-
-
-
 .hidden{
   display: none;
 }

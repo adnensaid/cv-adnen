@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+  <link rel="stylesheet" href="../../../css/varaibles.css">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <title>creations</title>
+</head>
+<body>
+  <div class="container-grid detail-page">
+    <header class="header">
+      <div class="logo">
+        <a href="#" class="logo-elem">
+            <img src="../../../img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img">
+        </a>
+      </div>  
+      <ul class="nav-left">
+        <li><a href="../../../index.html" class="active">Accueil</a></li>
+        <li class="text-primary"><a href="../../../creations/index.html">Projets</a></li>
+        <li><a href="#">Contact</a></li> 
+      </ul>
+      <ul class="nav-right">
+        <li class="nav-right-elem">
+          <a href="#">
+            <img src="../../../img/images-layout/github.svg" alt="">
+          </a>
+        </li>
+        <li class="nav-right-elem">
+          <a href="#">
+            <img src="../../../img/images-layout/linkedin.svg" alt="">
+          </a>
+        </li>       
+      </ul>    
+    </header>
+    <div class="profil">
+      <div class="profil-titre">
+        <p class="dev">Said Adnen</p>
+      </div>
+      <div class="profil-img">
+        <img src="../../../img/images-layout/adnensaid.jpg" alt="">
+      </div>     
+    </div>
+    <main class="main">
+      <h1 class="titre-list">Mise en place du header</h1>
+      <div class="content-page">
+        <h2>Objectifs</h2>
+        <p>
+          header code : Flex
+        </p>
+        <div class="code">
+          <pre>
+            &lt;div class="container-youtube">
+            &lt;div class="navbar">
+              &lt;div class="navbar-elem">
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/menu.svg" alt="">
+                &lt;/div>
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/youtube.svg" alt="">
+                &lt;/div>
+                &lt;p>YouTube&lt;/p>
+              &lt;/div>
+              &lt;div class="navbar-elem">
+                &lt;form action="#">
+                  &lt;input type="text" placeholder="Rechercher">
+                  &lt;button type="submit">
+                    &lt;div class="submit-img">
+                      &lt;img src="../../img/youtube-img/search.svg" alt="">
+                    &lt;/div>
+                  &lt;/button>
+                &lt;/form>
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/micro.svg" alt="">
+                &lt;/div>
+              &lt;/div>
+              &lt;div class="navbar-elem">
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/camera.svg" alt="">
+                &lt;/div>
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/application.svg" alt="">          
+                &lt;/div>
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/notification.svg" alt="">          
+                &lt;/div>
+                &lt;div class="navbar-elem-img">
+                  &lt;img src="../../img/youtube-img/user.svg" alt="">          
+                &lt;/div>  
+              &lt;/div>
+            &lt;/div>
+            &lt;aside class="sidebar">
+              &lt;h1>sidebar&lt;/h1>
+            &lt;/aside>
+            &lt;main class="main">
+              &lt;h1>main&lt;/h1>
+            &lt;/main>
+          &lt;/div>
+          </pre>    
+        </div>
+        <div class="code">
+          <pre>
+            .navbar{
+              grid-area: navbar;
+              display: flex;
+              flex-flow: row nowrap;
+              padding: 1rem 2rem;    
+              background:var(--youtube-navbar);
+              .navbar-elem{
+                display: flex;
+                flex-flow: row nowrap;
+                .navbar-elem-img{
+                  width: 2.5rem;
+                  height: 2.5rem;
+                  display: flex;
+                  flex-flow: row nowrap;
+                  align-items: center;
+                  justify-content: center;  
+          
+                }
+                &:first-child{
+                  flex: 1;
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  p{
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    color: var(--white);
+                    letter-spacing: -0.1rem;
+                    padding: 0 0.2rem;
+                    position: relative;
+                    &::after{
+                      content: "FR";
+                      font-size: 1rem;
+                      letter-spacing: 0.05rem;
+                      font-weight: 100;
+                      color: var(--gray);
+                      position: absolute;
+                      top: 0;
+          
+                    }
+                  }
+                  .navbar-elem-img{
+                    &:first-child{
+                      margin-right: 2rem;
+                    }
+                  }
+                }
+                &:last-child{
+                  flex: 1;
+                  display: flex;
+                  flex-flow: row nowrap;
+                  justify-content: flex-end;
+                  align-items: center;
+                  cursor: pointer;
+                  .navbar-elem-img{
+                    margin: 0 1rem;
+                    padding: 0.3rem;
+                    position: relative;
+                    &:nth-child(3)::after{
+                      content: "9+";
+                      border: 1px solid var(--red);
+                      font-size: 1rem;
+                      color: var(--white);
+                      border-radius: 100%;
+                      padding: 0.2rem;
+                      background: red;
+                      position: absolute;
+                      top: -0.5rem;
+                      right: -0.5rem;
+                    }
+                  }
+                }
+                &:nth-child(2){
+                  display: flex;
+                  flex-flow: row nowrap;
+                  align-items: center;
+                  form{
+                    padding: 0.5rem;
+                    min-width: 60rem;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    input{
+                      flex: 1;
+                      margin: 0;
+                      padding: 0.8rem;
+                      border: 0;
+                      outline: 0;
+                      z-index: 1;
+                      background: var(--youtube-background);
+                      border: 0.1px solid var(--youtube-navbar-light);
+                      &:focus{
+                        border-radius: 0;
+                        outline: 0.1rem solid blue;
+                        color: var(--white);
+                      }
+                    }
+                    button{
+                      flex-basis: 6rem;
+                      margin: 0;
+                      padding: 0.8rem;
+                      border-radius: 0;
+                      border: 0;
+                      z-index: 0;
+                      background: var(--youtube-navbar-light);
+                      display: flex;
+                      flex-flow: row nowrap;
+                      align-items: center;
+                      justify-content: center;
+                      .submit-img{
+                        width: 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      }
+                    }
+                  }
+                  .navbar-elem-img{
+                    padding: 0.3rem;
+          
+                  }  
+                }
+              }
+            }
+          </pre>
+        </div>
+      </div>
+    </main>    
+    <aside class="sidebar">
+      <div class="block">
+        <div class="block-img">
+          <img src="../../../img/youtube-img/header.png" alt="">
+        </div>
+      </div>
+    </aside>
+  </div>  
+</body>
+</html>
