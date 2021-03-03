@@ -1,0 +1,227 @@
+@import "animations";
+
+body{
+  background:var(--green);
+  color: var(--white);
+}
+.container{
+  max-width: 80rem;
+  margin: auto;
+}
+.grid-justify-content{
+  background: var(--white);
+  .justify-content{
+    background: var(--gray);
+    display: grid;
+    grid-template-columns: repeat(6, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+    animation: justify-content 6s ease forwards;    
+    .elem{
+      background: var(--gray);
+      padding: 1rem;
+      border: 1px solid var(--text);
+    }
+    .start, .center, .end, .space-around, .space-evenly, .space-between{
+      grid-row: 3 / 4;
+      grid-column: 1 / 7;
+      background: var(--text);
+      font-size: 2rem;
+      letter-spacing: 0.4rem;
+      text-align: center;
+    }
+    .start{
+      animation: justify-start 1s ease;
+    }
+    .center{
+      animation: justify-center 1s ease  1s;
+    }
+    .end{
+      animation: justify-end 1s ease 2s;
+    }
+    .space-around{
+      animation: justify-space-around 1s ease 3s;
+    } 
+    .space-evenly{
+      animation: justify-space-evenly 1s ease 4s;
+    }
+    .space-between{
+      animation: justify-space-between 1s ease 5s;
+    }       
+  }
+  .justify-items{
+    background: var(--gray);
+    display: grid;
+    grid-template-columns: repeat(6, 5rem);
+    grid-template-rows: repeat(4, 5rem);
+    animation: justify-items 3s ease forwards infinite;    
+    .elem{
+      background: var(--gray);
+      padding: 1rem;
+      border: 1px solid var(--text);
+    }
+    .stretch, .start, .center, .end{
+      grid-row: 3 / 4;
+      grid-column: 1 / 7;
+      background: var(--text);
+      font-size: 2rem;
+      letter-spacing: 0.4rem;
+      text-align: center;
+    }
+    .stretch{
+      animation: justify-items-stretch 1s ease forwards 1s;
+      opacity: 0;
+    }
+    .start{
+      animation: justify-items-start 1s ease 1s;
+      opacity: 0;
+    }
+    .center{
+      animation: justify-items-center 1s ease  2s;
+      opacity: 0;
+    }
+    .end{
+      animation: justify-items-end 1s ease 3s;
+      opacity: 0;
+    }    
+  }  
+}
+
+/* grid auto */
+
+.grid-1{
+  display: grid;
+  width: 20rem;
+  height: 20rem;
+  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-template-rows: repeat(auto-fill, 4rem);
+  .elem-1{
+    background: var(--red);
+    grid-column: 2 / span 2;
+  }
+  .elem-2{
+    grid-row: 2 / span 2;
+    background: var(--orange);
+  }
+  .elem-3{
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+    background: var(--blue);
+  }
+  .elem-4{
+    grid-column: 4 / span 2;
+    grid-row: 5 / span 2;
+    background: var(--yellow);
+  }
+}
+
+.grid-2{
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-template-rows: repeat(auto-fill, 4rem);
+  grid-auto-flow: column dense;
+
+  .elem-1{
+    grid-column: 3 / 4;
+    background: var(--red);
+  }
+  .elem-4{
+    grid-row: 4 / 5;
+    grid-column: span 2;
+    background: var(--orange);
+  }
+
+}
+
+.grid-3{
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+  .elem{
+    border: 0.1rem solid var(--red);
+  }
+}
+
+
+.grid-4{
+  display: grid;
+  grid-template-columns: minmax(15rem, 20rem) 1fr 1fr;
+  background: var(--dark);
+  gap: 1rem;
+  .elem{
+    background: var(--red);
+    
+  }
+}
+
+
+
+.grid-5{
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) 1fr 1fr;
+  .elem-4{
+    border: 1px solid var(--gray);
+ }
+}
+
+.grid-6{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+  .elem{
+    background: #4a69bd;
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;    
+  }
+  .elem-11 {
+    background: #eb2f06;
+  }
+  .elem-12 {
+    background: #fa983a;
+  }
+  .elem-13 {
+    background: #1e3799;
+  }
+  .elem-14 {
+    background: #78e08f;
+  }
+  .elem-15 {
+    background: #f8c291;
+  }  
+}
+.grid-7{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+  .elem{
+    background: #4a69bd;
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;    
+  }
+  .elem-11 {
+    background: #eb2f06;
+  }
+  .elem-12 {
+    background: #fa983a;
+  }
+  .elem-13 {
+    background: #1e3799;
+  }
+  .elem-14 {
+    background: #78e08f;
+  }
+  .elem-15 {
+    background: #f8c291;
+  }  
+}
+.container-flex {
+  display: inline-flex;
+  flex-flow: column;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 33vh;
+}

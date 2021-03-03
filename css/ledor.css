@@ -34,27 +34,23 @@ img {
 
 .annuler-x {
   position: relative;
-  background: var(--white);
-  border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.4s; }
   .annuler-x:hover {
     background: var(--blue);
-    color: var(--white); }
+    color: var(--pink); }
   .annuler-x::after {
     content: 'X';
     position: absolute;
     right: 0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: var(--red);
+    width: 1rem;
+    height: 1rem;
     color: var(--white);
     border-radius: 0.5rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
-    font-size: 1rem; }
+    align-items: center; }
 
 .through {
   position: relative; }
@@ -76,33 +72,53 @@ img {
     content: "\BB";
     padding: 0 0.5rem; }
 
-.active {
-  color: var(--blue-light); }
-
 .hidden {
   display: none; }
 
+.underline-2 {
+  max-width: 2rem;
+  margin: 2rem auto;
+  height: 0.1rem;
+  background: var(--white); }
+
+.underline-4 {
+  max-width: 4rem;
+  margin: 2rem auto;
+  height: 0.1rem;
+  background: var(--white); }
+
+.underline-6 {
+  display: inline-block;
+  min-width: 6rem;
+  margin: 1.5rem auto;
+  height: 0.1rem;
+  background: var(--pink); }
+
+.underline-8 {
+  max-width: 8rem;
+  margin: 2rem auto;
+  height: 0.1rem;
+  background: var(--white); }
+
 /* text */
+.title {
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  font-size: 2.4rem; }
+  .title-portfolio {
+    background: linear-gradient(to top, var(--white) 40%, var(--pink) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
 .text-hint {
   color: var(--text);
   font-size: 1.6rem;
   font-weight: 100; }
 
-.title {
-  letter-spacing: 0.2rem;
-  cursor: pointer;
-  margin: 2rem 0; }
-  .title-large {
-    font-size: 2rem; }
-  .title-small {
-    font-size: 1.8rem; }
-
 /* buttons */
 .btn {
   border: 0;
   margin: 2rem 0;
-  font-size: 1.6rem;
-  border-radius: 5px;
   outline: 0;
   cursor: pointer; }
   .btn-primary {
@@ -110,6 +126,27 @@ img {
     color: var(--white);
     padding: 0.5rem 2rem;
     font-weight: 700; }
+  .btn-primary-portfolio {
+    background: var(--white);
+    font-weight: 700;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    padding: 1rem 2rem;
+    color: var(--blue);
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
+  .btn-secondary-portfolio {
+    background: var(--green);
+    color: var(--white);
+    font-weight: 400;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    padding: 0.5rem 1rem; }
   .btn-primary-berberes {
     background: var(--white);
     color: var(--orange);

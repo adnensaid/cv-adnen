@@ -6,183 +6,246 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
   <link rel="stylesheet" href="./css/varaibles.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/film.css">
   <title>Document</title>
 </head>
 <body>
   <div class="container-grid">
     <header class="header">
-      <div class="logo">
-        <a href="#" class="logo-elem">
-            <img src="./img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img">
-        </a>
-      </div>  
-      <ul class="nav-left">
-        <li><a href="./index.html" class="active">Accueil</a></li>
-        <li class="text-primary"><a href="./creations/index.html">Projets</a></li>
-        <li><a href="#">Contact</a></li> 
-      </ul>
-      <ul class="nav-right">
-        <li class="nav-right-elem">
+      <div class="nav">
+        <a href="#" class="logo">
+          <img src="./img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img"> 
+        </a>    
+        <ul>
+          <li><a href="./index.html" class="active">Accueil</a></li>
+          <li class="text-primary"><a href="./creations/index.html">Projets</a></li>
+          <li><a href="#">CV</a></li>  
+          <li class="btn btn-primary-portfolio"><a href="#">Contact</a></li> 
+        </ul>
+      </div>
+      <ul class="socials">
+        <li class="social-elem">
           <a href="#">
             <img src="./img/images-layout/github.svg" alt="">
           </a>
         </li>
-        <li class="nav-right-elem">
+       <li class="social-elem">
           <a href="#">
-            <img src="./img/images-layout/linkedin.svg" alt="">
-          </a>
-        </li>       
-      </ul>    
+           <img src="./img/images-layout/linkedin.svg" alt="">
+         </a>
+        </li>  
+      </ul>     
     </header>
-
     <div class="profil">
       <div class="profil-titre">
         <p class="dev">Said Adnen</p>
       </div>
       <div class="profil-img">
-        <img src="./img/images-layout/adnensaid.jpg" alt="">
-      </div>     
+        <a href="#">
+          <img src="./img/images-layout/adnensaid.jpg" alt="">
+        </a>
+      </div>   
     </div>
+    <main class="main">
+      <div class="film">
+        <div class="introduction">
+          <div class="container-film">
+            <div class="introduction-content">
+              <h1>Adnen Said</h1>
+              <p>Développeur Front-end</p>
+              <div class="load"></div>
+              <img src="./img/images-layout/adnensaid.jpg" alt="" class="picture-profil">
+              <img src="./img/progression/html.svg" alt="" class="lang lang-html">
+              <img src="./img/progression/css.svg" alt="" class="lang lang-css">
+              <img src="./img/progression/git.svg" alt="" class="lang lang-git">
+              <img src="./img/progression/js.svg" alt="" class="lang lang-js">
+              <div class="filter"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="container-film">
+            <div class="skill-content">
+              <div class="skill-titre">
+                <p>S</p>
+                <p>K</p>
+                <p>I</p>
+                <p>L</p>
+                <p>L</p>
+              </div>
+              <div class="filter-skill-titre"></div>
+              <div class="skill-picture">
+                <img src="../../img/images-layout/adnensaid.jpg" alt="">
+              </div>
+              <div class="skill-score">
+                <div class="skill-score-elem"></div>
+                <div class="skill-score-elem"></div>
+                <div class="skill-score-elem"></div>
+                <div class="skill-score-elem"></div>
+                <div class="skill-score-elem"></div>
+                <div class="skill-score-elem"></div>
+                <div class="skill-score-elem"></div>
+              </div>
+              <div class="abscisse-x"></div>
+              <div class="ordonner-y"></div>
+              <div class="skill-titre-x">Languages</div>
+              <div class="skill-titre-y">Progression</div>
+              <div class="filter-titre-x"></div>
+              <div class="filter-titre-y"></div>
+              <div class="skill-picture-html">
+                <img src="../../img/progression/html.svg" alt="">
+              </div>
+              <div class="skill-picture-css">
+                <img src="../../img/progression/css.svg" alt="">
+              </div>
+              <div class="skill-picture-git">
+                <img src="../../img/progression/git.svg" alt="">
+              </div>
+              <div class="skill-picture-js">
+                <img src="../../img/progression/js.svg" alt="">
+              </div>
+              <div class="skill-picture-node">
+                <img src="../../img/progression/node.svg" alt="">
+              </div>
+              <div class="filter-pictures"></div>
+              <div class="skill-progression-html">
+              </div>
+              <div class="skill-progression-css">
+              </div>
+              <div class="skill-progression-git">
+              </div>
+              <div class="skill-progression-js">
+              </div>
+              <div class="skill-progression-node">
+              </div>   
+            </div>    
+          </div>
+        </div>  
+      </div>
+      <div class="last-projects">
+        <a href="#first-elem" class="btn-left"><</a>
+        <a href="#last-elem" class="btn-right">></a>  
+        <div class="container-last-projects">
+          <ul class="last-projects-list">
+            <li class="last-project-elem" id="first-elem">
+              <a href="./creations/youtube/index.html">
+                <img src="./img/youtube.svg" alt="" class="last-project-elem-img">
+                <div class="last-project-elem-text">
+                  <p class="titre">Youtube - chaine</p>
+                  <p class="underline-6"></p>
+                  <p class="text-hint">single page</p>    
+                </div>    
+              </a>
+            </li>
+            <li class="last-project-elem">
+              <a href="./creations/progression/index.html">
+                  <img src="./img/skill.png" alt="" class="last-project-elem-img">
+                  <div class="last-project-elem-text">
+                  <p class="titre">Film - animation</p>
+                  <p class="underline-6"></p>
+                  <p class="text-hint">single page</p>    
+                </div>
+              </a>     
+            </li>
+            <li  class="last-project-elem">
+              <a href="./creations/berberes/index.html">
+                <img src="./img/berberes/trio/rosace.svg" alt="" class="last-project-elem-img">
+                <div class="last-project-elem-text">
+                  <p class="titre">Secret - Berberes</p>
+                  <p class="underline-6"></p>
+                  <p class="text-hint">single page</p>    
+                </div>
+              </a>       
+            </li>
+            <li  class="last-project-elem">
+              <a href="./creations/ledor/index.html">
+                <img src="./img/ledor/frame.jpg" alt="" class="last-project-elem-img">
+                <div class="last-project-elem-text">
+                  <p class="titre">Agence - ledor</p>
+                  <p class="underline-6"></p>
+                  <p class="text-hint">single page</p>    
+                </div>
+              </a>       
+            </li>   
+            <li class="last-project-elem">
+              <a href="./creations/profil/index.html">
+                  <img src="./img/images-layout/adnensaid.jpg" alt="" class="last-project-elem-img">
+                  <div class="last-project-elem-text">
+                  <p class="titre">Profil - animation</p>
+                  <p class="underline-6"></p>
+                  <p class="text-hint">single page</p>    
+                </div>
+              </a>     
+            </li>    
+            <li  class="last-project-elem" id="last-elem">
+              <a href="./creations/carousel/index.html">
+                <img src="./img/right-arrow.svg" alt="" class="last-project-elem-img">
+                <div class="last-project-elem-text">
+                  <p class="titre">Carousel - css</p>
+                  <p class="underline-6"></p>
+                  <p class="text-hint">single page</p>    
+                </div>
+              </a>       
+            </li>   
+          </ul>    
+        </div>
+      </div>  
+    </main>
     <aside class="sidebar">
       <div class="block">
-        <p class="title title-small">Lorem ipsum</p>
+        <h1 class="title title-portfolio">Développeur Front-end</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dicta aliquid et corrupti illo eum nisi
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda at commodi
+          obcaecati, molestias totam quos impedit. Vero facilis, reprehenderit quas,
+          distinctio laudantium accusamus eaque.
         </p>
-        <div class="contact">
-          <div class="contact-list">
-            <div class="contact-elem">
-              <div class="contact-elem-img">
-                <img src="./img/images-layout/email.svg" alt="e-mail" class="img-contact-mail">
-              </div>
-              <p>adnensaid@gmail.com</p>     
-            </div>
-            <div class="contact-elem">
-              <div class="contact-elem-img">
-                <img src="./img/images-layout/tel.svg" alt="phone" class="img-contact-phone">
-              </div>
-              <p>07 81 15 29 46</p>     
-            </div>
-          </div>
-          <div class="block-direction">
-            <img src="./img/images-layout/right-direction.svg" alt="">    
-          </div>    
+        <img src="./img/images-layout/right-direction.svg" alt="" class="right">
+      </div>
+      <div class="block">
+        <div class="block-contact">
+          <img src="./img/images-layout/tel.svg" alt="">
+          <p>07 81 15 29 46</p>    
         </div>
-        <div class="block-outils">
-          <button class="btn btn-small-white">Logiciels</button>
-          <button class="btn btn-small">Sites</button>
+        <div class="block-contact">
+          <img src="./img/images-layout/email.svg" alt="">
+          <p>adnensaid83@gmail.com</p>    
+        </div>
+      </div>    
+      <div class="block">
+        <div class="outils">
+          <button class="btn btn-primary-portfolio">Logiciels</button>
+          <button class="btn btn-secondary-portfolio">Sites</button>
           <div class="block-list">
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="./img/images-layout/gimp.svg" alt="">
-              </div>
-              <div class="titre-elem">gimp <span>version 1.1</span></div>
+            <div class="block-elem">
+              <img src="./img/images-layout/gimp.svg" alt="">
+              <p class="titre-elem">gimp</p>
             </div>  
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
+            <div class="block-elem">
                 <img src="./img/images-layout/inkscape.svg" alt="">
-              </div>
-              <div class="titre-elem">inkscape <span>version 1.1</span></div>
+              <p class="titre-elem">inkscape</p>
             </div>
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="./img/images-layout/visual.svg" alt="">
-              </div>
-              <div class="titre-elem">visual studio <span>version 1.3</span></div>
+            <div class="block-elem">
+              <img src="./img/images-layout/visual.svg" alt="">
+              <p class="titre-elem">visual studio</p>
             </div>
           </div>  
           <div class="block-list">
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="./img/images-layout/stackoverflow.svg" class="img-elem-gimp" alt="">
-              </div>
+            <div class="block-elem">
+              <img src="./img/images-layout/stackoverflow.svg" class="img-elem-gimp" alt="">
               <p class="titre-elem">stackoverflow</p>
-            </div>
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="./img/images-layout/shop.svg" class="img-elem-gimp" alt="">
-              </div>
+            </div>  
+            <div class="block-elem">
+              <img src="./img/images-layout/shop.svg" class="img-elem-gimp" alt="">
               <p class="titre-elem">Openclassroom</p>
-            </div>  
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="./img/images-layout/shop.svg" class="img-elem-gimp" alt="">
-              </div>
+            </div>
+            <div class="block-elem">
+              <img src="./img/images-layout/shop.svg" class="img-elem-gimp" alt="">
               <p class="titre-elem">Grafikart</p>
-            </div>  
+            </div>
           </div>  
-        </div>
-        <div class="contact-form">
-          <form action="">
-            <input type="text" placeholder="votre mail">
-            <button type="submit" class="">Ok</button>
-          </form>
-        </div>
-      </div>      
-    </aside>  
-    <main class="main">
-      <section class="banner">
-        <div class="banner-image">
-          <div class="skill-content">
-            <img src="./img/images-layout/screen-2.svg" alt="">
-            <div class="abscisse"></div>
-            <div class="ordonnee"></div>
-            <div class="chaine">Skill tv</div>
-            <p class="progression text-hint">Progress</p>
-            <p class="lang text-hint">Languages</p>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-node-js"></i> 
-            <i class="fab fa-git-alt"></i> 
-            <div class="progress-html"></div> 
-             <div class="progress-css"></div>
-            <div class="progress-js"></div>
-            <div class="progress-node"></div>  
-            <div class="progress-git"></div>
-          </div>        
-        </div>      
-        <div class="banner-content">
-          <div class="bloc">
-            <h1 class="title title-large">Bienvenue sur ma page web </h1>
-            <p>
-              Réaliser en <strong>HTML & CSS</strong> pour l'instant, j'ai utilsé
-              <strong>GIMP</strong>  pour créer les différentes photos, pour la
-              conception j'ai utilisé le wireframe <strong>MOCKFLOW</strong> ,
-              un lien vers la demo est à votre disposition
-            </p>
-            <a class="btn btn-primary" href="./creations/wireframe/index.html">Demo</a>    
-          </div>
-        </div>   
-      </section> 
-      <section class="last-projects">
-        <div class="list-projects">
-          <a class="projet-elem" href="./creations/ledor/index.html">
-            <div class="img-elem">
-              <img src="./img/images-layout/cake.svg" alt="">
-            </div>
-            <p class="title-project">Agence ledor</p>
-            <p class="text-hint">Single page</p>
-          </a>   
-          <a class="projet-elem" href="./creations/berberes/index.html">
-            <div class="img-elem">
-              <img src="./img/images-layout/berberes.svg" alt="">
-            </div>
-            <p class="title-project">Secret berberes</p>
-            <p class="text-hint">Single page</p>
-          </a>   
-          <a class="projet-elem" href="./creations/youtube/index.html">
-            <div class="img-elem">
-              <img src="./img/youtube.svg" alt="">
-            </div>
-            <p class="title-project">youtube - chaine</p>
-            <p class="text-hint">Single page</p>
-          </a> 
         </div>  
-
-      </section>     
-    </main>
+      </div>
+    </aside>
   </div>
 </body>
 </html>

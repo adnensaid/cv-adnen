@@ -11,42 +11,42 @@
 <body>
   <div class="container-grid details-page">
     <header class="header">
-      <div class="logo">
-        <a href="#" class="logo-elem">
-            <img src="../../../img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img">
-        </a>
-      </div>  
-      <ul class="nav-left">
-        <li><a href="../../../index.html">Accueil</a></li>
-        <li class="text-primary"><a class="active" href="../../../creations/index.html">Projets</a></li>
-        <li><a href="#">Contact</a></li> 
-      </ul>
-      <ul class="nav-right">
-        <li class="nav-right-elem">
+      <div class="nav">
+        <a href="#" class="logo">
+          <img src="../../../img/images-layout/menu.svg" alt="adnen said" class="logo-elem-img"> 
+        </a>    
+        <ul>
+          <li><a href="../../../index.html" class="active">Accueil</a></li>
+          <li class="text-primary"><a href="../../../creations/index.html">Projets</a></li>
+          <li><a href="#">CV</a></li>  
+          <li class="btn btn-primary-portfolio"><a href="#">Contact</a></li> 
+        </ul>
+      </div>
+      <ul class="socials">
+        <li class="social-elem">
           <a href="#">
             <img src="../../../img/images-layout/github.svg" alt="">
           </a>
         </li>
-        <li class="nav-right-elem">
+       <li class="social-elem">
           <a href="#">
-            <img src="../../../img/images-layout/linkedin.svg" alt="">
-          </a>
-        </li>       
-      </ul>    
+           <img src="../../../img/images-layout/linkedin.svg" alt="">
+         </a>
+        </li>  
+      </ul>     
     </header>
     <div class="profil">
       <div class="profil-titre">
         <p class="dev">Said Adnen</p>
       </div>
       <div class="profil-img">
-        <img src="../../../img/images-layout/adnensaid.jpg" alt="">
-      </div>     
+        <a href="#">
+          <img src="../../../img/images-layout/adnensaid.jpg" alt="">
+        </a>
+      </div>   
     </div>
     <main class="main">
       <div class="container">
-        <h1 class="titre-list">
-          Details
-        </h1>
         <div class="lists">
           <ul class="content-list">
             <li>
@@ -79,82 +79,59 @@
     </main> 
     <aside class="sidebar">
       <div class="block">
-        <p class="title title-small">Lorem ipsum</p>
+        <h1 class="title title-portfolio">Développeur Front-end</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dicta aliquid et corrupti illo eum nisi
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda at commodi
+          obcaecati, molestias totam quos impedit. Vero facilis, reprehenderit quas,
+          distinctio laudantium accusamus eaque.
         </p>
-        <div class="contact">
-          <div class="contact-list">
-            <div class="contact-elem">
-              <div class="contact-elem-img">
-                <img src="../../../img/images-layout/email.svg" alt="e-mail" class="img-contact-mail">
-              </div>
-              <p>adnensaid@gmail.com</p>     
-            </div>
-            <div class="contact-elem">
-              <div class="contact-elem-img">
-                <img src="../../../img/images-layout/tel.svg" alt="phone" class="img-contact-phone">
-              </div>
-              <p>07 81 15 29 46</p>     
-            </div>
-          </div>
-          <div class="block-direction">
-            <img src="../../../img/images-layout/right-direction.svg" alt="">    
-          </div>    
+        <img src="../../../img/images-layout/right-direction.svg" alt="" class="right">
+      </div>
+      <div class="block">
+        <div class="block-contact">
+          <img src="../../../img/images-layout/tel.svg" alt="">
+          <p>07 81 15 29 46</p>    
         </div>
-        <div class="block-outils">
-          <button class="btn btn-small-white">Logiciels</button>
-          <button class="btn btn-small">Sites</button>
+        <div class="block-contact">
+          <img src="../../../img/images-layout/email.svg" alt="">
+          <p>adnensaid83@gmail.com</p>    
+        </div>
+      </div>    
+      <div class="block">
+        <div class="outils">
+          <button class="btn btn-primary-portfolio">Logiciels</button>
+          <button class="btn btn-secondary-portfolio">Sites</button>
           <div class="block-list">
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="../../../img/images-layout/gimp.svg" class="img-elem-gimp" alt="">
-              </div>
-              <p class="titre-elem">gimp <span>version 1.2</span></p>
-            </div>
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
+            <div class="block-elem">
+              <img src="../../../img/images-layout/gimp.svg" alt="">
+              <p class="titre-elem">gimp</p>
+            </div>  
+            <div class="block-elem">
                 <img src="../../../img/images-layout/inkscape.svg" alt="">
-              </div>
-              <div class="titre-elem">inkscape <span>version 1.1</span></div>
+              <p class="titre-elem">inkscape</p>
             </div>
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="../../../img/images-layout/visual.svg" alt="">
-              </div>
-              <div class="titre-elem">visual studio <span>version 1.3</span></div>
+            <div class="block-elem">
+              <img src="../../../img/images-layout/visual.svg" alt="">
+              <p class="titre-elem">visual studio</p>
             </div>
           </div>  
           <div class="block-list">
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="../../../img/images-layout/stackoverflow.svg" class="img-elem-gimp" alt="">
-              </div>
+            <div class="block-elem">
+              <img src="../../../img/images-layout/stackoverflow.svg" class="img-elem-gimp" alt="">
               <p class="titre-elem">stackoverflow</p>
-            </div>
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="../../../img/images-layout/shop.svg" class="img-elem-gimp" alt="">
-              </div>
+            </div>  
+            <div class="block-elem">
+              <img src="../../../img/images-layout/shop.svg" class="img-elem-gimp" alt="">
               <p class="titre-elem">Openclassroom</p>
-            </div>  
-            <div class="block-elem annuler-x">
-              <div class="block-elem-img">
-                <img src="../../../img/images-layout/shop.svg" class="img-elem-gimp" alt="">
-              </div>
+            </div>
+            <div class="block-elem">
+              <img src="../../../img/images-layout/shop.svg" class="img-elem-gimp" alt="">
               <p class="titre-elem">Grafikart</p>
-            </div>  
+            </div>
           </div>  
-        </div>
-        <div class="contact-form">
-          <form action="">
-            <input type="text" placeholder="votre mail">
-            <button type="submit" class="">Ok</button>
-          </form>
-        </div>
-      </div>      
-    </aside>  
+        </div>  
+      </div>
+    </aside>
   </div>  
 </body>
 </html>
